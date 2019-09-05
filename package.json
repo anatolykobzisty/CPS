@@ -1,6 +1,7 @@
 {
   "name": "webpack-test",
   "version": "1.0.0",
+  "homepage": "https://anatolykobzisty.github.io/CPS",
   "description": "",
   "main": "index.js",
   "keywords": [],
