@@ -1,14 +1,495 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
-</body>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <button class="button button-menu" type="button">Меню</button>
+        <a class="site-logo">
+          <img src="./img/logo.svg" alt="CPS" width="97px" height="51px" />
+        </a>
+        <a class="button button-repair" href="#">
+          <span class="visually-hidden">
+            Оставить заявку на ремонт
+          </span>
+        </a>
+        <a class="button button-status" href="#">
+          <span class="visually-hidden">
+            Статус ремонта
+          </span>
+        </a>
+        <button class="button button-search" type="button">Поиск</button>
+
+        <ul class="site-menu">
+          <li class="site-menu__item site-menu__item--active">
+            <a
+              class="site-memu__item-link site-memu__item-link--active"
+              href="#"
+            >
+              Ремонт техники
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__item-link" href="#">Услуги и сервисы</a>
+            <ul class="site-menu__content-list">
+              <li class="site-menu__content-item">
+                <a href="#brands">Ремонтируемые бренды</a>
+              </li>
+              <li class="site-menu__content-item">
+                <a href="#divices">Ремонтируемые устройства</a>
+              </li>
+              <li class="site-menu__content-item">
+                <a href="#price">Цены на услуги</a>
+              </li>
+              <li class="site-menu__content-item">
+                <a href="#adresses">Адреса сервисных центров</a>
+              </li>
+              <li class="site-menu__content-item">
+                <a href="#">Специальные цены</a>
+              </li>
+              <li class="site-menu__content-item">
+                <a href="#">Отзывы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-memu__item-link" href="#">Корпоративным клиентам</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-memu__item-link" href="#">Продавцам техники</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-memu__item-link" href="#">Партнерам</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-memu__item-link" href="#">Производителям</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-memu__item-link" href="#">Наши сервисные центры</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-memu__item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <button class="button button-call" type="button">Звонок</button>
+        <button class="button button-chat" type="button">Чат</button>
+        <button class="button button-profile" type="button">Профиль</button>
+
+        <a class="site-email" href="mailto:mail@cps.com">mail@cps.com</a>
+        <a class="site-phone" href="tel:88008908900">8 800 890 8900</a>
+
+        <div class="site-language">
+          <a href="#" class="site-language__link site-language__link--active">
+            RU
+          </a>
+          <a class="site-language__link" href="#">EN </a>
+          <a class="site-language__link" href="#">CH</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1 class="site-title">
+          Сервис ремонта техники<br />
+          "CPS"
+        </h1>
+      </div>
+      <section class="info-company">
+        <div class="container">
+          <p class="info-company__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+            <br />
+            <br />
+            Мы успешно работаем с 1992 года и заслужили
+            <span class="info-company__read-more">
+              ...
+            </span>
+            <span class="info-company__text info-company__text-more">
+              репутацию надежного партнера, что подтверждает большое количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+              рекомендациям и, в свою очередь, советуют нас родным и близким.
+            </span>
+          </p>
+          <button class="info-company__btn-more btn-more" type="button">
+            Читать далее
+          </button>
+        </div>
+        <div class="info-company__img">
+          <img
+            src="./img/cps.jpg"
+            alt="CPS company"
+            width="360px"
+            height="208px"
+          />
+        </div>
+      </section>
+      <section class="brands brands-slider" name="brands">
+        <div class="container-title">
+          <h3 class="brands-title">Ремонт техники различных брендов</h3>
+        </div>
+        <ul class="brands__list">
+          <li class="brands__item">
+            <img
+              src="./img/logo-lenovo.svg"
+              alt="Lenovo"
+              width="108px"
+              height="32px"
+            />
+            <a class="brands-link" href="#">
+              <img src="./img/arrow-right.svg" alt='Ремонт техники "Lenovo"' />
+              <span class="visually-hidden">Ремонт техники "Lenovo"</span>
+            </a>
+          </li>
+          <li class="brands__item">
+            <img
+              src="./img/logo-samsung.svg"
+              alt="Samsung"
+              width="116px"
+              height="39px"
+            />
+            <a class="brands-link" href="#">
+              <img src="./img/arrow-right.svg" alt='Ремонт техники "Samsung"' />
+              <span class="visually-hidden">Ремонт техники "Samsung"</span>
+            </a>
+          </li>
+          <li class="brands__item">
+            <img
+              src="./img/logo-apple.svg"
+              alt="Apple"
+              width="44px"
+              height="44px"
+            />
+            <a class="brands-link" href="#">
+              <img src="./img/arrow-right.svg" alt='Ремонт техники "Apple"' />
+              <span class="visually-hidden">Ремонт техники "Apple"</span>
+            </a>
+          </li>
+          <li class="brands__item">
+            <img
+              src="./img/logo-viewSonic.svg"
+              alt="ViewSonic"
+              width="128px"
+              height="21px"
+            />
+            <a class="brands-link" href="#">
+              <img
+                src="./img/arrow-right.svg"
+                alt='Ремонт техники "ViewSonic"'
+              />
+              <span class="visually-hidden">Ремонт техники "ViewSonic"</span>
+            </a>
+          </li>
+          <li class="brands__item">
+            <img
+              src="./img/logo-bosch.svg"
+              alt="Bosch"
+              width="128px"
+              height="29px"
+            />
+            <a class="brands-link" href="#">
+              <img src="./img/arrow-right.svg" alt='Ремонт техники "Bosch"' />
+              <span class="visually-hidden">Ремонт техники "Bosch"</span>
+            </a>
+          </li>
+          <li class="brands__item">
+            <img
+              src="./img/logo-hp.svg"
+              alt="Hewlett-Packard"
+              width="128px"
+              height="29px"
+            />
+            <a class="brands-link" href="#">
+              <img
+                src="./img/arrow-right.svg"
+                alt='Ремонт техники "Hewlett-Packard"'
+              />
+              <span class="visually-hidden"
+                >Ремонт техники "Hewlett-Packard"</span
+              >
+            </a>
+          </li>
+          <li class="brands__item">
+            <img
+              src="./img/logo-acer.svg"
+              alt="Acer"
+              width="94px"
+              height="24px"
+            />
+            <a class="brands-link" href="#">
+              <img src="./img/arrow-right.svg" alt='Ремонт техники "Acer"' />
+              <span class="visually-hidden">Ремонт техники "Acer"</span>
+            </a>
+          </li>
+          <li class="brands__item">
+            <img
+              src="./img/logo-sony.svg"
+              alt="Sony"
+              width="128px"
+              height="26px"
+            />
+            <a class="brands-link" href="#">
+              <img src="./img/arrow-right.svg" alt='Ремонт техники "Sony"' />
+              <span class="visually-hidden">Ремонт техники "Sony"</span>
+            </a>
+          </li>
+          <li class="brands__item brands__item-more">
+            <img src="#" alt="Huawei" width="" height="" />
+            <a class="brands-link" href="#">
+              <img src="./img/arrow-right.svg" alt='Ремонт техники "Huawei"' />
+              <span class="visually-hidden">Ремонт техники "Huawei"</span>
+            </a>
+          </li>
+        </ul>
+        <div class="container">
+          <button
+            class="brands__btn-more btn-more visually-hidden"
+            type="button"
+          >
+            Показать все (9)
+          </button>
+        </div>
+
+        <div class="brands-slider__dot-container">
+          <span class="dot dot--active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+      </section>
+      <section class="devices devices-slider" name="divices">
+        <div class="container-title">
+          <h3 class="devices-title">Ремонт различных видов техники</h3>
+        </div>
+        <ul class="devices__list">
+          <li class="devices__item">
+            <span class="devices__item-title">Ремонт ноутбуков</span>
+            <a class="devices__item-link" href="#">
+              <img src="./img/arrow-right.svg" alt="Ремонт ноутбуков" />
+            </a>
+          </li>
+          <li class="devices__item">
+            <span class="devices__item-title">Ремонт планшетов</span>
+            <a class="devices__item-link" href="#">
+              <img src="./img/arrow-right.svg" alt="Ремонт планшетов" />
+            </a>
+          </li>
+          <li class="devices__item">
+            <span class="devices__item-title">Ремонт ПК</span>
+            <a class="devices__item-link" href="#">
+              <img src="./img/arrow-right.svg" alt="Ремонт ПК" />
+            </a>
+          </li>
+          <li class="devices__item">
+            <span class="devices__item-title">Ремонт мониторов</span>
+            <a class="devices__item-link" href="#">
+              <img src="./img/arrow-right.svg" alt="Ремонт мониторов" />
+            </a>
+          </li>
+          <li class="devices__item devices__item-more">
+            <span class="devices__item-title"
+              >Ремонт шлемов виртуальной реальности</span
+            >
+            <a class="devices__item-link" href="#">
+              <img
+                src="./img/arrow-right.svg"
+                alt="Ремонт шлемов виртуальной реальности"
+              />
+            </a>
+          </li>
+        </ul>
+        <div class="container">
+          <button
+            class="devices__btn-more btn-more visually-hidden"
+            type="button"
+          >
+            Показать все (9)
+          </button>
+        </div>
+
+        <div class="devices-slider__dot-container">
+          <span class="dot dot--active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+      </section>
+      <section class="price price-slider" name="price">
+        <div class="container-title">
+          <h3 class="price-title">Цены на услуги</h3>
+        </div>
+        <ul class="price__list">
+          <li class="price__item">
+            <h4 class="price__item-title">Ремонтные услуги</h4>
+            <p class="price__item-text">
+              Тестирование с выдачей технического заключения
+            </p>
+            <h4 class="price__item-title">Цена</h4>
+            <p class="price__item-text">
+              Бесплатно
+            </p>
+            <h4 class="price__item-title">Срок</h4>
+            <p class="price__item-text">
+              30-120 мин
+            </p>
+            <a href="#" class="price__item-btn btn">Заказать</a>
+          </li>
+          <li class="price__item">
+            <h4 class="price__item-title">Ремонтные услуги</h4>
+            <p class="price__item-text">
+              Диагностика
+            </p>
+            <h4 class="price__item-title">Цена</h4>
+            <p class="price__item-text">
+              Бесплатно
+            </p>
+            <h4 class="price__item-title">Срок</h4>
+            <p class="price__item-text">
+              30 мин
+            </p>
+            <a href="#" class="price__item-btn btn">Заказать</a>
+          </li>
+          <li class="price__item">
+            <h4 class="price__item-title">Ремонтные услуги</h4>
+            <p class="price__item-text">
+              Замена дисплея
+            </p>
+            <h4 class="price__item-title">Цена</h4>
+            <p class="price__item-text">
+              1000 р
+            </p>
+            <h4 class="price__item-title">Срок</h4>
+            <p class="price__item-text">
+              30-120 мин
+            </p>
+            <a href="#" class="price__item-btn btn">Заказать</a>
+          </li>
+          <li class="price__item">
+            <h4 class="price__item-title">Ремонтные услуги</h4>
+            <p class="price__item-text">
+              Замена полифонического динамика
+            </p>
+            <h4 class="price__item-title">Цена</h4>
+            <p class="price__item-text">
+              1000 р
+            </p>
+            <h4 class="price__item-title">Срок</h4>
+            <p class="price__item-text">
+              30-120 мин
+            </p>
+            <a href="#" class="price__item-btn btn">Заказать</a>
+          </li>
+          <li class="price__item">
+            <h4 class="price__item-title">Ремонтные услуги</h4>
+            <p class="price__item-text">
+              Замена программного обеспечения
+            </p>
+            <h4 class="price__item-title">Цена</h4>
+            <p class="price__item-text">
+              1000 р
+            </p>
+            <h4 class="price__item-title">Срок</h4>
+            <p class="price__item-text">
+              30-120 мин
+            </p>
+            <a href="#" class="price__item-btn btn">Заказать</a>
+          </li>
+        </ul>
+        <div class="price-slider__dot-container">
+          <span class="dot dot--active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+        <div class="container">
+          <p class="price__info-text">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </p>
+          <a href="#" class="price__offer">
+            Получить коммерческое предложение
+          </a>
+        </div>
+      </section>
+      <section class="adresses" name="adresses">
+        <div class="conainer-title">
+          <h3 class="adresses-title">Адреса сервисных центров</h3>
+        </div>
+        <div class="container">
+          <a href="#" class="adresses-partners">
+            Наши партнеры
+          </a>
+        </div>
+        <!-- Карта -->
+        <div class="container">
+          <p class="adresses-info-text">
+            Наши сервисные центры расположены по всей России, в таких городах,
+            как Москва, Санкт-Петербург, Казань, Нижний Новгород, владивосток, и
+            др. Все сервисные центры являются авторизованными и имеют единую
+            базу и проходят ежемесячную проверку качества оказываемых услуг.
+          </p>
+          <p class="adresses-info-text">
+            Наши сервисные центры расположены по всей России, в таких городах,
+            как Москва, Санкт-Петербург, Казань, Нижний Новгород, владивосток, и
+            др. Все сервисные центры являются авторизованными и имеют единую
+            базу и проходят ежемесячную проверку качества оказываемых услуг.
+          </p>
+          <p class="adresses-info-text">
+            Наши сервисные центры расположены по всей России, в таких городах,
+            как Москва, Санкт-Петербург, Казань, Нижний Новгород, владивосток, и
+            др. Все сервисные центры являются авторизованными и имеют единую
+            базу и проходят ежемесячную проверку качества оказываемых услуг.
+          </p>
+          <p class="adresses-info-text">
+            Наши сервисные центры расположены по всей России, в таких городах,
+            как Москва, Санкт-Петербург, Казань, Нижний Новгород, владивосток, и
+            др. Все сервисные центры являются авторизованными и имеют единую
+            базу и проходят ежемесячную проверку качества оказываемых услуг.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer__item footer__item-copyright">
+          © 2019 CPS<br />
+          Разработано командой Apesong
+        </p>
+        <p class="footer__item footer__item-privacy">
+          Политика конфиденциальности
+        </p>
+        <p class="footer__item footer__item-offer">
+          Информация, размещенная на данной странице, не является публичной
+          офертой
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

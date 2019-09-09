@@ -1,17 +1,33 @@
-$bgColor: #24292e;
-$text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+@import "_normalize.css";
+@import "_mixins.scss";
+@import "_variables.scss";
 
 body {
-  padding: 1rem;
+  @include font-lakes-regular;
+
+  max-width: 320px;
+  padding: 0;
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-typo-primary;
+  letter-spacing: $letter-spacing;
+  background-color: $color-bg-main;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
