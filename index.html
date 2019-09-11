@@ -5,52 +5,51 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon/favicon.ico">
-    <title>SCP</title>
+    <title>Cервис ремонта техники "CPS"</title>
   <link href="style.css" rel="stylesheet"></head>
   <body>
     <header class="site-header">
       <div class="container">
-        <button class="button button-menu" type="button">Меню</button>
+        <button class="btn btn-menu" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
         <a class="site-logo">
-          <img src="./img/logo.svg" alt="CPS" width="97px" height="51px">
+          <img src="./img/logo.svg" width="97px" height="51px" alt="Cервис ремонта техники 'CPS'">
         </a>
-        <a class="button button-repair" href="#">
-          <span class="visually-hidden">
-            Оставить заявку на ремонт
-          </span>
+        <a class="btn btn-repair" href="#">
+          <span class="visually-hidden">Оставить заявку на ремонт</span>
         </a>
-        <a class="button button-status" href="#">
-          <span class="visually-hidden">
-            Статус ремонта
-          </span>
+        <a class="btn btn-status" href="#">
+          <span class="visually-hidden">Статус ремонта</span>
         </a>
-        <button class="button button-search" type="button">Поиск</button>
-
+        <button class="btn btn-search" type="button">
+          <span class="visually-hidden">Поиск</span>
+        </button>
         <ul class="site-menu">
           <li class="site-menu__item site-menu__item--active">
-            <a class="site-memu__item-link site-memu__item-link--active" href="#">
+            <a class="site-memu__item-link" href="#">
               Ремонт техники
             </a>
           </li>
           <li class="site-menu__item">
             <a class="site-menu__item-link" href="#">Услуги и сервисы</a>
-            <ul class="site-menu__content-list">
-              <li class="site-menu__content-item">
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
                 <a href="#brands">Ремонтируемые бренды</a>
               </li>
-              <li class="site-menu__content-item">
+              <li class="sub-menu__item">
                 <a href="#divices">Ремонтируемые устройства</a>
               </li>
-              <li class="site-menu__content-item">
+              <li class="sub-menu__item">
                 <a href="#price">Цены на услуги</a>
               </li>
-              <li class="site-menu__content-item">
+              <li class="sub-menu__item">
                 <a href="#adresses">Адреса сервисных центров</a>
               </li>
-              <li class="site-menu__content-item">
-                <a href="#">Специальные цены</a>
+              <li class="sub-menu__item">
+                <a href="#price__offer">Специальные цены</a>
               </li>
-              <li class="site-menu__content-item">
+              <li class="sub-menu__item">
                 <a href="#">Отзывы</a>
               </li>
             </ul>
@@ -74,10 +73,15 @@
             <a class="site-memu__item-link" href="#">Контакты</a>
           </li>
         </ul>
-
-        <button class="button button-call" type="button">Звонок</button>
-        <button class="button button-chat" type="button">Чат</button>
-        <button class="button button-profile" type="button">Профиль</button>
+        <button class="btn btn-call" type="button">
+          <span class="visually-hidden">Звонок</span>
+        </button>
+        <button class="btn btn-chat" type="button">
+          <span class="visually-hidden">Чат</span>
+        </button>
+        <button class="btn btn-profile" type="button">
+          <span class="visually-hidden">Профиль</span>
+        </button>
 
         <a class="site-email" href="mailto:mail@cps.com">mail@cps.com</a>
         <a class="site-phone" href="tel:88008908900">8 800 890 8900</a>
@@ -165,7 +169,7 @@
             </a>
           </li>
           <li class="brands__item">
-            <img src="./img/logo-hp.svg" alt="Hewlett-Packard" width="128px" height="29px">
+            <img src="./img/logo-hp.svg" alt="Hewlett-Packard" width="52px" height="52px">
             <a class="brands-link" href="#">
               <img src="./img/arrow-right.svg" alt='Ремонт техники "Hewlett-Packard"'>
               <span class="visually-hidden">Ремонт техники "Hewlett-Packard"</span>
@@ -194,7 +198,7 @@
           </li>
         </ul>
         <div class="container">
-          <button class="brands__btn-more btn-more visually-hidden" type="button">
+          <button class="btn btn-more visually-hidden" type="button">
             Показать все (9)
           </button>
         </div>
@@ -218,37 +222,27 @@
         <ul class="devices__list">
           <li class="devices__item">
             <span class="devices__item-title">Ремонт ноутбуков</span>
-            <a class="devices__item-link" href="#">
-              <img src="./img/arrow-right.svg" alt="Ремонт ноутбуков">
-            </a>
+            <a class="devices__item-link" href="#"></a>
           </li>
           <li class="devices__item">
             <span class="devices__item-title">Ремонт планшетов</span>
-            <a class="devices__item-link" href="#">
-              <img src="./img/arrow-right.svg" alt="Ремонт планшетов">
-            </a>
+            <a class="devices__item-link" href="#"></a>
           </li>
           <li class="devices__item">
             <span class="devices__item-title">Ремонт ПК</span>
-            <a class="devices__item-link" href="#">
-              <img src="./img/arrow-right.svg" alt="Ремонт ПК">
-            </a>
+            <a class="devices__item-link" href="#"></a>
           </li>
           <li class="devices__item">
             <span class="devices__item-title">Ремонт мониторов</span>
-            <a class="devices__item-link" href="#">
-              <img src="./img/arrow-right.svg" alt="Ремонт мониторов">
-            </a>
+            <a class="devices__item-link" href="#"></a>
           </li>
           <li class="devices__item devices__item-more">
             <span class="devices__item-title">Ремонт шлемов виртуальной реальности</span>
-            <a class="devices__item-link" href="#">
-              <img src="./img/arrow-right.svg" alt="Ремонт шлемов виртуальной реальности">
-            </a>
+            <a class="devices__item-link" href="#"></a>
           </li>
         </ul>
         <div class="container">
-          <button class="devices__btn-more btn-more visually-hidden" type="button">
+          <button class="btn btn-more visually-hidden" type="button">
             Показать все (9)
           </button>
         </div>
@@ -363,13 +357,13 @@
             единичную услугу. Для получения коммерческого предложения на
             постоянное обслуживание, оставьте заявку.
           </p>
-          <a href="#" class="price__offer">
+          <a href="#" class="price__offer" name="price__offer">
             Получить коммерческое предложение
           </a>
         </div>
       </section>
       <section class="adresses" name="adresses">
-        <div class="conainer-title">
+        <div class="container-title">
           <h3 class="adresses-title">Адреса сервисных центров</h3>
         </div>
         <div class="container">
@@ -421,5 +415,6 @@
         </p>
       </div>
     </footer>
+    <section class="modal modal-"></section>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
