@@ -1102,21 +1102,21 @@ button.swiper-pagination-bullet {
   background-position: 50% 50%;
   border-radius: 50%; }
   .btn-circle--menu {
-    background-image: url("/src/img/menu.svg"); }
+    background-image: url(./static/menu.svg); }
   .btn-circle--close {
-    background-image: url("/src/img/close.svg"); }
+    background-image: url(./static/close.svg); }
   .btn-circle--repair {
-    background-image: url("/src/img/repair.svg"); }
+    background-image: url(./static/repair.svg); }
   .btn-circle--status {
-    background-image: url("/src/img/status.svg"); }
+    background-image: url(./static/status.svg); }
   .btn-circle--search {
-    background-image: url("/src/img/search.svg"); }
+    background-image: url(./static/search.svg); }
   .btn-circle--call {
-    background-image: url("/src/img/call.svg"); }
+    background-image: url(./static/call.svg); }
   .btn-circle--message {
-    background-image: url("/src/img/message.svg"); }
+    background-image: url(./static/message.svg); }
   .btn-circle--profile {
-    background-image: url("/src/img/profile.svg"); }
+    background-image: url(./static/profile.svg); }
 
 .site-logo {
   position: relative;
@@ -1784,21 +1784,21 @@ button.swiper-pagination-bullet {
   background-position: 50% 50%;
   border-radius: 50%; }
   .btn-circle--menu {
-    background-image: url("/src/img/menu.svg"); }
+    background-image: url(./static/menu.svg); }
   .btn-circle--close {
-    background-image: url("/src/img/close.svg"); }
+    background-image: url(./static/close.svg); }
   .btn-circle--repair {
-    background-image: url("/src/img/repair.svg"); }
+    background-image: url(./static/repair.svg); }
   .btn-circle--status {
-    background-image: url("/src/img/status.svg"); }
+    background-image: url(./static/status.svg); }
   .btn-circle--search {
-    background-image: url("/src/img/search.svg"); }
+    background-image: url(./static/search.svg); }
   .btn-circle--call {
-    background-image: url("/src/img/call.svg"); }
+    background-image: url(./static/call.svg); }
   .btn-circle--message {
-    background-image: url("/src/img/message.svg"); }
+    background-image: url(./static/message.svg); }
   .btn-circle--profile {
-    background-image: url("/src/img/profile.svg"); }
+    background-image: url(./static/profile.svg); }
 
 .btn-oval {
   padding: 0;
