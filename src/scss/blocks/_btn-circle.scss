@@ -9,34 +9,34 @@
   border-radius: 50%;
 
   &--menu {
-    background-image: url("/src/img/menu.svg");
+    background-image: url("../img/menu.svg");
   }
 
   &--close {
-    background-image: url("/src/img/close.svg");
+    background-image: url("../img/close.svg");
   }
 
   &--repair {
-    background-image: url("/src/img/repair.svg");
+    background-image: url("../img/repair.svg");
   }
 
   &--status {
-    background-image: url("/src/img/status.svg");
+    background-image: url("../img/status.svg");
   }
 
   &--search {
-    background-image: url("/src/img/search.svg");
+    background-image: url("../img/search.svg");
   }
 
   &--call {
-    background-image: url("/src/img/call.svg");
+    background-image: url("../img/call.svg");
   }
 
   &--message {
-    background-image: url("/src/img/message.svg");
+    background-image: url("../img/message.svg");
   }
 
   &--profile {
-    background-image: url("/src/img/profile.svg");
+    background-image: url("../img/profile.svg");
   }
 }

@@ -1,12 +1,12 @@
-@import "_normalize";
-@import "_swiper";
-@import "_mixins";
-@import "_variables";
-@import "./blocks/_sidenav";
-@import "./blocks/_site-title";
-@import "./blocks/_main";
-@import "./blocks/_footer";
-@import "./blocks/_modal";
+@import "_normalize.css";
+@import "_swiper.css";
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "./blocks/_sidenav.scss";
+@import "./blocks/_site-title.scss";
+@import "./blocks/_main.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_modal.scss";
 
 body {
   @include font-lakes-regular;
