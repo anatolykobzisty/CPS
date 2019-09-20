@@ -1722,7 +1722,7 @@ button.swiper-pagination-bullet {
     width: 24px;
     height: 24px;
     content: "";
-    background: url("/src/img/red-arrow-right.svg") no-repeat 50% 50%; }
+    background: url(./static/red-arrow-right.svg) no-repeat 50% 50%; }
 
 .adresses {
   position: relative;
@@ -1748,7 +1748,7 @@ button.swiper-pagination-bullet {
       width: 24px;
       height: 24px;
       content: "";
-      background: url("/src/img/red-arrow-right.svg") no-repeat 50% 50%; }
+      background: url(./static/red-arrow-right.svg) no-repeat 50% 50%; }
   .adresses__text {
     margin-top: 0;
     column-count: 1;
