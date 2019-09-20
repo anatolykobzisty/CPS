@@ -1614,7 +1614,7 @@ button.swiper-pagination-bullet {
     align-self: flex-end;
     width: 40px;
     height: 40px;
-    background-image: url("/src/img/arrow-right.svg"); }
+    background-image: url(./static/arrow-right.svg); }
   .devices__pagination {
     position: absolute;
     top: 175px;
