@@ -1,0 +1,45 @@
+.adresses {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+    font-size: $font-size--3;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__link-text {
+    @include font-lakes-medium;
+
+    position: relative;
+    margin-right: 20px;
+    font-size: $font-size--3;
+    line-height: $line-height--3;
+    letter-spacing: $letter-spacing--2;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 24px;
+      height: 24px;
+      content: "";
+      background: url("/src/img/red-arrow-right.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &__text {
+    margin-top: 0;
+    column-count: 1;
+    column-gap: 16px;
+  }
+
+  &__map {
+    height: 378px;
+  }
+}

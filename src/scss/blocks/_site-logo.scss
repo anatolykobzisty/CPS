@@ -1,0 +1,24 @@
+.site-logo {
+  position: relative;
+  left: 73px;
+  z-index: 3;
+
+  @media screen and (min-width: 360px) {
+    left: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 107px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: 26.5px;
+    left: 31.5px;
+
+    &__img {
+      width: 74px;
+      height: 36px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "./blocks/_container-title.scss";
+@import "./blocks/_btn-oval.scss";
+
+.price {
+  position: relative;
+
+  &__title {
+    margin: 0;
+    font-size: $font-size--3;
+  }
+
+  &__slider {
+    margin-left: 16px;
+  }
+
+  &__list {
+    height: 228px;
+  }
+
+  &__item {
+    @include font-lakes-regular;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 260px;
+    height: 200px;
+    padding: 16px;
+    margin: 0;
+    text-align: left;
+    background: $color-bg-nav;
+    border: 1px solid $color-bg-border;
+    border-radius: 6px;
+  }
+
+  &__item-title {
+    @include font-lakes-medium;
+
+    margin: 0;
+    margin-bottom: 2px;
+    line-height: $line-height--4;
+    color: $color-typo-secondary;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  &__item-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__item-btn.btn-oval {
+    width: 119px;
+  }
+
+  &__pagination {
+    position: absolute;
+    top: 215px;
+    height: 12px;
+  }
+
+  &__info-text {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    @include font-lakes-medium;
+
+    position: relative;
+    font-size: $font-size--3;
+    line-height: $line-height--3;
+    letter-spacing: $letter-spacing--2;
+  }
+
+  &__link-text {
+    &::after {
+      position: absolute;
+      top: auto;
+      left: 100%;
+      width: 24px;
+      height: 24px;
+      content: "";
+      background: url("/src/img/red-arrow-right.svg") no-repeat 50% 50%;
+    }
+  }
+}

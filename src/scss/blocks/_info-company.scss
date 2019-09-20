@@ -1,0 +1,26 @@
+@import "./blocks/_container-title.scss";
+@import "./blocks/_btn-more.scss";
+
+.info-company {
+  position: relative;
+  margin-bottom: 24px;
+
+  &__text {
+    height: 90px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  &__text-more {
+    display: none;
+  }
+
+  &__btn {
+    margin-top: 16px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+}

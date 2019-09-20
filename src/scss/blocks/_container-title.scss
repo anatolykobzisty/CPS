@@ -1,0 +1,12 @@
+.container-title {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  line-height: $line-height--3;
+  color: $color-typo-secondary;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing--2;
+  background-image: $color-bg-title;
+  border-top: 1px solid $color-bg-border-nav;
+}

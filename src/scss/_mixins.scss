@@ -30,3 +30,12 @@
 @mixin font-lakes-bold {
   font-family: "TT Lakes-Bold", Arial, sans-serif;
 }
+
+@mixin button-reset {
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

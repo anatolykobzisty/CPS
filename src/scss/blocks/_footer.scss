@@ -1,0 +1,17 @@
+.footer {
+  @include font-lakes-medium;
+
+  position: relative;
+  padding-top: 16px;
+  margin-bottom: 23px;
+  line-height: $line-height--4;
+  color: $color-typo-secondary;
+  text-align: center;
+  border-top: 1px solid $color-bg-border-header;
+  mix-blend-mode: normal;
+  opacity: 0.72;
+
+  &__item {
+    margin-top: 0;
+  }
+}

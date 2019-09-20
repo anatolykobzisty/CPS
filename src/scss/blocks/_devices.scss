@@ -1,0 +1,52 @@
+@import "./blocks/_container-title.scss";
+@import "./blocks/_btn-more.scss";
+
+.devices {
+  position: relative;
+  min-width: 320px;
+  margin-bottom: 24px;
+
+  &__title {
+    margin: 0;
+    font-size: $font-size--3;
+  }
+
+  &__slider {
+    margin-left: 16px;
+  }
+
+  &__list {
+    height: 188px;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    max-width: 240px;
+    height: 160px;
+    padding: 16px;
+    font-size: 18px;
+    text-align: center;
+    background: $color-bg-nav;
+    border: 1px solid $color-bg-border;
+    border-radius: 6px;
+  }
+
+  &__item-link {
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    background-image: url("/src/img/arrow-right.svg");
+  }
+
+  &__pagination {
+    position: absolute;
+    top: 175px;
+    height: 12px;
+  }
+
+  &__btn {
+    display: none;
+  }
+}

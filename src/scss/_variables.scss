@@ -3,31 +3,35 @@ $color-bg-main: #f8f8f8;
 $color-bg-nav: #ffffff;
 $color-bg-checked: #b5b6bc;
 $color-bg-unchecked: #dddddd;
-$color-bg-title: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+$color-bg-title: linear-gradient(270deg, #f8f8f8 0%, #ffffff 100%);
 
 $color-bg-border: #eaeaea;
+$color-bg-border-header: #d9fff5;
 $color-bg-border-title: #41f6d7;
 $color-bg-border-nav: #d9fff5;
+$color-bg-border-menu: #b8ffec;
 
 $color-typo-primary: #1b1c21;
 $color-typo-secondary: #7e7e82;
+$color-typo-btn: #ffffff;
 
 $font-size: 14px;
-$font-size--h1: 28px;
-$font-size--h2: 24px;
-$font-size--h3: 16px;
+$font-size--1: 28px;
+$font-size--2: 24px;
+$font-size--3: 16px;
+$font-size--4: 12px;
 
 $line-height: 18px;
-$line-height--h1: 40px;
-$line-height--h2: 32px;
-$line-height--h3: 24px;
-$line-height--h4: 16px;
+$line-height--1: 40px;
+$line-height--2: 32px;
+$line-height--3: 24px;
+$line-height--4: 16px;
 
 $letter-spacing: 0.2px;
-$letter-spacing--h1: -0.6px;
-$letter-spacing--h2: -0.6px;
-$letter-spacing--h3: -0.2px;
+$letter-spacing--1: -0.6px;
+$letter-spacing--2: -0.2px;
+$letter-spacing--3: -0.15px;
 
 $screen-sm: 320px;
-$screen-md: 720px;
+$screen-md: 768px;
 $screen-lg: 1440px;

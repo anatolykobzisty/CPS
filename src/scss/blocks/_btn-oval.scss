@@ -1,0 +1,30 @@
+.btn-oval {
+  @include button-reset;
+
+  width: 132px;
+  height: 32px;
+  font-size: $font-size--4;
+  line-height: $line-height--3;
+  color: $color-bg-nav;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing--3;
+  background-color: $color-bg-brand;
+  border-radius: 16px;
+
+  &__text {
+    @include font-lakes-bold;
+
+    position: relative;
+    left: -10px;
+
+    &::before {
+      position: absolute;
+      top: -4px;
+      left: 105%;
+      width: 24px;
+      height: 24px;
+      content: "";
+      background: url("/src/img/dropdown.svg") no-repeat 50% 50%;
+    }
+  }
+}

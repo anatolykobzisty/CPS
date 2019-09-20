@@ -1,0 +1,87 @@
+@import "./blocks/_btn-circle.scss";
+@import "./blocks/_btn-oval.scss";
+
+.modal {
+  @include font-lakes-medium;
+
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 3;
+  box-sizing: border-box;
+  height: 676px;
+  background-color: $color-bg-nav;
+
+  &__btn-close {
+    top: 24px;
+    left: 16px;
+  }
+
+  &__title {
+    @include font-lakes-bold;
+
+    position: absolute;
+    top: 104px;
+    height: 32px;
+    margin: 0;
+    font-size: $font-size--2;
+    line-height: $line-height--2;
+    color: $color-typo-primary;
+    letter-spacing: $letter-spacing--1;
+
+    &::before {
+      position: absolute;
+      left: -16px;
+      width: 4px;
+      height: 32px;
+      content: "";
+      background-color: $color-bg-border-title;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  &__form {
+    position: absolute;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 16px;
+  }
+
+  &__input {
+    @include font-lakes-medium;
+
+    box-sizing: border-box;
+    min-width: 288px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: $font-size--3;
+    line-height: $line-height--3;
+    color: $color-bg-checked;
+    letter-spacing: $letter-spacing--2;
+    border: 1px solid $color-bg-border;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: $color-bg-checked;
+    }
+
+    &[name="message"] {
+      height: 119px;
+      resize: none;
+    }
+  }
+
+  &__text {
+    padding-right: 16px;
+    margin-top: 0;
+    margin-bottom: 19px;
+    line-height: $line-height--4;
+    color: $color-typo-secondary;
+  }
+
+  &__link {
+    color: $color-bg-brand;
+  }
+}

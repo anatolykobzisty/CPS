@@ -1,0 +1,46 @@
+@import "./blocks/_container-title.scss";
+@import "./blocks/_btn-more.scss";
+
+.brands {
+  position: relative;
+  margin-bottom: 24px;
+
+  &__title {
+    margin: 0;
+    font-size: $font-size--3;
+  }
+
+  &__slider {
+    margin-left: 16px;
+  }
+
+  &__list {
+    height: 100px;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 240px;
+    height: 72px;
+    font-size: 18px;
+    text-align: center;
+    background: $color-bg-nav;
+    border: 1px solid $color-bg-border;
+    border-radius: 6px;
+  }
+
+  &__item-link {
+    width: 40px;
+    height: 40px;
+    background-image: url("/src/img/arrow-right.svg");
+  }
+
+  &__pagination {
+    position: absolute;
+    top: 87px;
+    height: 12px;
+  }
+}

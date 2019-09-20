@@ -1,0 +1,26 @@
+.site-title {
+  @include font-lakes-bold;
+
+  position: relative;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: $font-size--1;
+  line-height: $line-height--1;
+  color: $color-typo-primary;
+  letter-spacing: $letter-spacing--1;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    width: 4px;
+    height: 32px;
+    content: "";
+    background-color: $color-bg-border-title;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 24px;
+  }
+}

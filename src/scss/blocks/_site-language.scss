@@ -1,0 +1,17 @@
+.site-language {
+  position: absolute;
+  bottom: 32px;
+  left: 16px;
+
+  &__link {
+    margin-right: 7px;
+
+    &:hover {
+      color: $color-typo-secondary;
+    }
+
+    &--active {
+      color: $color-typo-secondary;
+    }
+  }
+}

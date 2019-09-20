@@ -1,0 +1,22 @@
+.btn-more {
+  @include font-lakes-medium;
+  @include button-reset;
+
+  position: relative;
+  left: 28px;
+  font-size: $font-size--3;
+  line-height: $line-height--3;
+  letter-spacing: $letter-spacing--2;
+
+  &__text {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -30px;
+      width: 24px;
+      height: 24px;
+      content: "";
+      background: url("/src/img/arrows-down.svg") no-repeat 50% 50%;
+    }
+  }
+}
