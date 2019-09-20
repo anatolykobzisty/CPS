@@ -1,7 +1,6 @@
 .footer {
   @include font-lakes-medium;
 
-  position: relative;
   padding-top: 16px;
   margin-bottom: 23px;
   line-height: $line-height--4;
@@ -11,7 +10,34 @@
   mix-blend-mode: normal;
   opacity: 0.72;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
   &__item {
     margin-top: 0;
+  }
+
+  &__item-copyright {
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__item-privacy {
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__item-offer {
+    @media screen and (min-width: 768px) {
+      width: 213px;
+      text-align: right;
+    }
   }
 }

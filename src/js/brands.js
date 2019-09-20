@@ -1,4 +1,6 @@
 import Swiper from "swiper";
+let brandsBtn = document.querySelector(".brands__btn");
+let brandsList = document.querySelector(".brands__list");
 
 let swiper = new Swiper(".brands__slider", {
   slidesPerView: "auto",
@@ -12,3 +14,13 @@ let swiper = new Swiper(".brands__slider", {
     onlyInViewport: true
   }
 });
+
+function openBrandsList() {
+  if (brandsList.style.height === "100%") {
+    brandsList.style.height = "170px";
+  } else {
+    brandsList.style.height = "100%";
+  }
+}
+
+brandsBtn.addEventListener("click", openBrandsList);

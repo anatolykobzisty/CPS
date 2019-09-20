@@ -9,4 +9,9 @@
   letter-spacing: $letter-spacing--2;
   background-image: $color-bg-title;
   border-top: 1px solid $color-bg-border-nav;
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 24px;
+    margin-bottom: 24px;
+  }
 }

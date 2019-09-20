@@ -187,9 +187,11 @@
               </button>
             </div>
             <picture class="info-company__img">
-              <source media="(max-width: 320px)" srcset="./img/cps-320w.jpg" />
-              <source media="(max-width: 767px)" srcset="./img/cps-768w.jpg" />
-              <source media="(min-width: 769px)" srcset="./img/cps-1440w.jpg" />
+              <source
+                media="(min-width: 1440px)"
+                srcset="./img/cps-1440w.jpg"
+              />
+              <source media="(min-width: 768px)" srcset="./img/cps-768w.jpg" />
               <img src="./img/cps-320w.jpg" alt="CPS company" />
             </picture>
           </section>
@@ -344,7 +346,7 @@
               </ul>
               <div class="brands__pagination swiper-pagination"></div>
             </div>
-            <button class="devices__btn btn-more" type="button">
+            <button class="brands__btn btn-more" type="button">
               <span class="btn-more__text">Показать все (9)</span>
             </button>
           </section>

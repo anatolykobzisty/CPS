@@ -9,13 +9,13 @@ function openText() {
     text.style.overflow = "hidden";
     text.style.height = "88px";
     dots.style.display = "inline";
-    button.innerHTML = "Читать далее";
+    // button.innerHTML = "Читать далее";
   } else {
     moreText.style.display = "inline";
     text.style.overflow = "visible";
     text.style.height = "230px";
     dots.style.display = "none";
-    button.innerHTML = "Читать меньше";
+    // button.innerHTML = "Читать меньше";
   }
 }
 

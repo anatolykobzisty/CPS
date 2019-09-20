@@ -5,14 +5,38 @@
   position: relative;
   margin-bottom: 24px;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
   &__text {
     height: 90px;
     margin: 0;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      min-width: 312px;
+      max-width: 900px;
+      height: auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+      min-width: 490px;
+    }
   }
 
   &__text-more {
     display: none;
+
+    @media screen and (min-width: 900px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: flex;
+    }
   }
 
   &__btn {
@@ -22,5 +46,18 @@
   &__img {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      min-width: 360px;
+      height: 208px;
+      padding-top: 16px;
+      margin-right: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      min-width: 532px;
+      min-height: 307px;
+      margin-right: 24px;
+    }
   }
 }
