@@ -14,4 +14,8 @@
     padding: 16px 24px;
     margin-bottom: 24px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 32px;
+  }
 }

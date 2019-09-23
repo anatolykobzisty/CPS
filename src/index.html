@@ -26,54 +26,26 @@
             alt="Cервис ремонта техники 'CPS'"
           />
         </a>
-        <button
-          class="sidenav__btn-close btn-circle btn-circle--close"
-          type="button"
-        >
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <button
-          class="sidenav__btn-repair btn-circle btn-circle--repair"
-          type="button"
-        ></button>
-        <span class="sidenav__text-repair">Оставить заявку</span>
-        <button
-          class="sidenav__btn-status btn-circle btn-circle--status"
-          type="button"
-        ></button>
-        <span class="sidenav__text-status">Статус ремонта</span>
-        <button
-          class="sidenav__btn-search btn-circle btn-circle--search"
-          type="button"
-        >
-          <span class="visually-hidden">Поиск</span>
-        </button>
-        <input
-          class="sidenav__input-search"
-          type="search"
-          name="search"
-          id="search"
-        />
-        <button
-          class="sidenav__btn-call btn-circle btn-circle--call"
-          type="button"
-        >
-          <span class="visually-hidden">Позвонить</span>
-        </button>
-        <button
-          class="sidenav__btn-message btn-circle btn-circle--message"
-          type="button"
-        >
-          <span class="visually-hidden">Написать сообщение</span>
-        </button>
-        <button
-          class="sidenav__btn-profile btn-circle btn-circle--profile"
-          type="button"
-        >
-          <span class="visually-hidden">Посмотреть профиль</span>
-        </button>
         <nav class="site-menu">
           <div class="site-menu__inner">
+            <button
+              class="sidenav__btn-search btn-circle btn-circle--search"
+              type="button"
+            >
+              <span class="visually-hidden">Поиск</span>
+            </button>
+            <input
+              class="sidenav__input-search"
+              type="search"
+              name="search"
+              id="search"
+            />
+            <button
+              class="sidenav__btn-close btn-circle btn-circle--close"
+              type="button"
+            >
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
             <ul class="site-menu__list">
               <li class="site-menu__item">
                 <a class="site-menu__item-link" href="#">
@@ -111,6 +83,24 @@
                 <a class="site-menu__item-link" href="#">Контакты</a>
               </li>
             </ul>
+            <button
+              class="sidenav__btn-call btn-circle btn-circle--call"
+              type="button"
+            >
+              <span class="visually-hidden">Позвонить</span>
+            </button>
+            <button
+              class="sidenav__btn-message btn-circle btn-circle--message"
+              type="button"
+            >
+              <span class="visually-hidden">Написать сообщение</span>
+            </button>
+            <button
+              class="sidenav__btn-profile btn-circle btn-circle--profile"
+              type="button"
+            >
+              <span class="visually-hidden">Посмотреть профиль</span>
+            </button>
             <a class="site-email" href="mailto:mail@cps.com">mail@cps.com</a>
             <a class="site-phone" href="tel:88008908900">8 800 890 8900</a>
             <div class="site-language">
@@ -127,40 +117,66 @@
         </nav>
       </aside>
       <div class="content">
+        <button
+          class="sidenav__btn-repair btn-circle btn-circle--repair"
+          type="button"
+        ></button>
+        <span class="sidenav__text-repair">Оставить заявку</span>
+        <button
+          class="sidenav__btn-status btn-circle btn-circle--status"
+          type="button"
+        ></button>
+        <span class="sidenav__text-status">Статус ремонта</span>
         <main class="main">
           <div class="container">
             <h1 class="site-title">Услуги и сервисы</h1>
           </div>
           <section class="sub-menu">
-            <div class="sub-menu__slider swiper-container">
-              <ul class="sub-menu__list swiper-wrapper">
-                <li class="sub-menu__item sub-menu__item--active swiper-slide">
-                  <a class="sub-menu__item-link" href="#brands"
-                    >Ремонтируемые бренды</a
-                  >
+            <div class="sub-menu__slider">
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item">
+                  <a class="sub-menu__item-link" href="#brands">
+                    <span
+                      class="sub-menu__item-text sub-menu__item-text--active"
+                    >
+                      Ремонтируемые бренды
+                    </span>
+                  </a>
                 </li>
-                <li class="sub-menu__item swiper-slide">
-                  <a class="sub-menu__item-link" href="#divices"
-                    >Ремонтируемые устройства</a
-                  >
+                <li class="sub-menu__item">
+                  <a class="sub-menu__item-link" href="#divices">
+                    <span class="sub-menu__item-text">
+                      Ремонтируемые устройства
+                    </span>
+                  </a>
                 </li>
-                <li class="sub-menu__item swiper-slide">
-                  <a class="sub-menu__item-link" href="#price"
-                    >Цены на услуги</a
-                  >
+                <li class="sub-menu__item">
+                  <a class="sub-menu__item-link" href="#price">
+                    <span class="sub-menu__item-text">
+                      Цены на услуги
+                    </span>
+                  </a>
                 </li>
-                <li class="sub-menu__item swiper-slide">
-                  <a class="sub-menu__item-link" href="#adresses"
-                    >Адреса сервисных центров</a
-                  >
+                <li class="sub-menu__item">
+                  <a class="sub-menu__item-link" href="#adresses">
+                    <span class="sub-menu__item-text">
+                      Адреса сервисных центров
+                    </span>
+                  </a>
                 </li>
-                <li class="sub-menu__item swiper-slide">
-                  <a class="sub-menu__item-link" href="#price__offer"
-                    >Специальные цены</a
-                  >
+                <li class="sub-menu__item">
+                  <a class="sub-menu__item-link" href="#price__offer">
+                    <span class="sub-menu__item-text">
+                      Специальные цены
+                    </span>
+                  </a>
                 </li>
-                <li class="sub-menu__item swiper-slide">
-                  <a class="sub-menu__item-link" href="#">Отзывы</a>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__item-link" href="#">
+                    <span class="sub-menu__item-text">
+                      Отзывы
+                    </span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -204,6 +220,7 @@
               <ul class="brands__list swiper-wrapper">
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-lenovo.svg"
                     alt="Lenovo"
                     width="108px"
@@ -219,6 +236,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-samsung.svg"
                     alt="Samsung"
                     width="116px"
@@ -236,6 +254,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-apple.svg"
                     alt="Apple"
                     width="44px"
@@ -251,6 +270,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-viewSonic.svg"
                     alt="ViewSonic"
                     width="128px"
@@ -268,6 +288,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-bosch.svg"
                     alt="Bosch"
                     width="128px"
@@ -283,6 +304,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-hp.svg"
                     alt="Hewlett-Packard"
                     width="52px"
@@ -300,6 +322,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-acer.svg"
                     alt="Acer"
                     width="94px"
@@ -315,6 +338,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-sony.svg"
                     alt="Sony"
                     width="128px"
@@ -330,6 +354,7 @@
                 </li>
                 <li class="brands__item swiper-slide">
                   <img
+                    class="brands__item-logo"
                     src="./img/logo-sony.svg"
                     alt="Sony"
                     width="128px"
@@ -414,7 +439,7 @@
                   </p>
                   <h4 class="price__item-title">Цена</h4>
                   <p class="price__item-text">
-                    Бесплатно
+                    1000 р
                   </p>
                   <h4 class="price__item-title">Срок</h4>
                   <p class="price__item-text">
@@ -512,7 +537,7 @@
             <div class="container-title">
               <h3 class="adresses__title">Адреса сервисных центров</h3>
             </div>
-            <div class="container">
+            <div class="adresses__link-wrap">
               <span class="adresses__link">
                 <a href="#" class="adresses__link-text">Наши партнеры</a>
               </span>
@@ -573,106 +598,102 @@
             офертой
           </p>
         </footer>
-        <section class="modal modal-message visually-hidden">
-          <div class="container">
-            <button
-              class="modal__btn-close btn-circle btn-circle--close"
-              type="button"
-            >
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
-            <h2 class="modal__title">Обратная связь</h2>
-            <form class="modal__form" action="#" method="post">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input
-                class="modal__input"
-                type="text"
-                name="name"
-                required
-                placeholder="Имя"
-              />
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input
-                class="modal__input"
-                type="tel"
-                name="phone"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                required
-                placeholder="Телефон"
-              />
-              <label class="visually-hidden" for="email"
-                >Электронная почта</label
-              >
-              <input
-                class="modal__input"
-                type="email"
-                name="email"
-                required
-                placeholder="Электронная почта"
-              />
-              <label class="visually-hidden" for="message">Сообщение</label>
-              <textarea
-                class="modal__input"
-                rows="4"
-                placeholder="Сообщение"
-                type="text"
-                name="message"
-              ></textarea>
-              <p class="modal__text">
-                Нажимая “отправить”, вы даете согласие на
-                <a class="modal__link" href="#" target="_blank">
-                  обработку персональных данных
-                </a>
-                и соглашаетесь с нашей
-                <a class="modal__link" href="#" target="_blank">
-                  политикой конфиденциальности
-                </a>
-              </p>
-              <input
-                class="modal__btn-submit btn-oval"
-                type="submit"
-                value="Отправить"
-              />
-            </form>
-          </div>
-        </section>
-        <section class="modal modal-call visually-hidden">
-          <div class="container">
-            <button
-              class="modal__btn-close btn-circle btn-circle--close"
-              type="button"
-            >
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
-            <h2 class="modal__title">Заказать звонок</h2>
-            <form class="modal__form" action="#" method="post">
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input
-                class="modal__input"
-                type="tel"
-                name="phone"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                required
-                placeholder="Телефон"
-              />
-              <p class="modal__text">
-                Нажимая “отправить”, вы даете согласие на
-                <a class="modal__link" href="#" target="_blank">
-                  обработку персональных данных
-                </a>
-                и соглашаетесь с нашей
-                <a class="modal__link" href="#" target="_blank">
-                  политикой конфиденциальности
-                </a>
-              </p>
-              <button class="modal__btn-submit btn-oval" type="button">
-                <span class="btn-oval__text">Отправить</span>
-              </button>
-            </form>
-          </div>
-        </section>
-        <div class="overlay"></div>
       </div>
     </div>
+    <section class="modal modal-message">
+      <div class="modal__inner">
+        <button
+          class="modal__btn-close modal-message__btn-close btn-circle btn-circle--close"
+          type="button"
+        >
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <h2 class="modal__title">Обратная связь</h2>
+        <form class="modal__form" action="#" method="post">
+          <label class="visually-hidden" for="name">Имя</label>
+          <input
+            class="modal__input"
+            type="text"
+            name="name"
+            required
+            placeholder="Имя"
+          />
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input
+            class="modal__input"
+            type="tel"
+            name="phone"
+            pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            required
+            placeholder="Телефон"
+          />
+          <label class="visually-hidden" for="email">Электронная почта</label>
+          <input
+            class="modal__input"
+            type="email"
+            name="email"
+            required
+            placeholder="Электронная почта"
+          />
+          <label class="visually-hidden" for="message">Сообщение</label>
+          <textarea
+            class="modal__input"
+            rows="4"
+            placeholder="Сообщение"
+            type="text"
+            name="message"
+          ></textarea>
+          <p class="modal__text">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="modal__link" href="#" target="_blank">
+              обработку персональных данных
+            </a>
+            и соглашаетесь с нашей
+            <a class="modal__link" href="#" target="_blank">
+              политикой конфиденциальности
+            </a>
+          </p>
+          <button class="modal__btn-submit btn-oval" type="button">
+            <span class="btn-oval__text">Отправить</span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="modal modal-call">
+      <div class="modal__inner">
+        <button
+          class="modal__btn-close modal-call__btn-close btn-circle btn-circle--close"
+          type="button"
+        >
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <h2 class="modal__title">Заказать звонок</h2>
+        <form class="modal__form" action="#" method="post">
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input
+            class="modal__input"
+            type="tel"
+            name="phone"
+            pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            required
+            placeholder="Телефон"
+          />
+          <p class="modal__text">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="modal__link" href="#" target="_blank">
+              обработку персональных данных
+            </a>
+            и соглашаетесь с нашей
+            <a class="modal__link" href="#" target="_blank">
+              политикой конфиденциальности
+            </a>
+          </p>
+          <button class="modal__btn-submit btn-oval" type="button">
+            <span class="btn-oval__text">Отправить</span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <div class="overlay"></div>
   </body>
 </html>

@@ -2,4 +2,16 @@
   position: absolute;
   bottom: 108px;
   left: 16px;
+
+  @media screen and (min-width: 768px) {
+    top: 860px;
+    bottom: auto;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 760px;
+    bottom: auto;
+    left: 32px;
+  }
 }

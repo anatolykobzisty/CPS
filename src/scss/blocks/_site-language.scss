@@ -3,6 +3,18 @@
   bottom: 32px;
   left: 16px;
 
+  @media screen and (min-width: 768px) {
+    top: 968px;
+    bottom: auto;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 868px;
+    bottom: auto;
+    left: 32px;
+  }
+
   &__link {
     margin-right: 7px;
 

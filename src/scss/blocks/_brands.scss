@@ -9,6 +9,10 @@
     margin-bottom: 32px;
   }
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
   &__title {
     margin: 0;
     font-size: $font-size--3;
@@ -39,11 +43,11 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 240px;
     height: 72px;
+    padding-left: 16px;
     font-size: 18px;
-    text-align: center;
     background: $color-bg-nav;
     border: 1px solid $color-bg-border;
     border-radius: 6px;
@@ -57,16 +61,17 @@
 
     @media screen and (min-width: 1440px) {
       width: 240px;
-      margin-right: 0 !important;
-      margin-bottom: 16px;
       margin-left: 32px !important;
     }
   }
 
   &__item-link {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
     width: 40px;
     height: 40px;
-    background-image: url("/src/img/arrow-right.svg");
+    background-image: url("../img/arrow-right.svg");
   }
 
   &__pagination {

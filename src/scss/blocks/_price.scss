@@ -4,6 +4,10 @@
 .price {
   position: relative;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+  }
+
   &__title {
     margin: 0;
     font-size: $font-size--3;
@@ -11,15 +15,24 @@
 
   &__slider {
     margin-left: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 24px;
+      margin-left: 24px;
+    }
   }
 
   &__list {
     height: 228px;
+    margin-left: 16px;
+
+    @media screen and (min-width: 768px) {
+      display: table;
+      margin: 0;
+    }
   }
 
   &__item {
-    @include font-lakes-regular;
-
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -30,8 +43,14 @@
     margin: 0;
     text-align: left;
     background: $color-bg-nav;
-    border: 1px solid $color-bg-border;
     border-radius: 6px;
+
+    @media screen and (min-width: 768px) {
+      display: table-row;
+      width: 100%;
+      height: 64px;
+      border-bottom: 1px solid black;
+    }
   }
 
   &__item-title {
@@ -43,6 +62,10 @@
     color: $color-typo-secondary;
     mix-blend-mode: normal;
     opacity: 0.72;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   &__item-text {
@@ -51,6 +74,11 @@
     justify-content: space-between;
     margin: 0;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      display: table-cell;
+      margin: 0;
+    }
   }
 
   &__item-btn.btn-oval {
@@ -61,11 +89,19 @@
     position: absolute;
     top: 215px;
     height: 12px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   &__info-text {
     margin: 0;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 421px;
+    }
   }
 
   &__link {

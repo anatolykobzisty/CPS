@@ -28,7 +28,6 @@
   }
 
   @media screen and (min-width: 1440px) {
-    // position: relative;
     display: inline;
     width: 320px;
     height: 100%;
@@ -46,7 +45,11 @@
 
   &__list {
     position: absolute;
-    top: 116px;
+    top: 92px;
+
+    @media screen and (min-width: 768px) {
+      top: 116px;
+    }
   }
 
   &__item {
