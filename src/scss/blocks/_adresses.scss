@@ -40,26 +40,38 @@
     }
   }
 
-  &__text {
-    margin-top: 0;
-    column-count: 1;
-    column-gap: 16px;
-
-    @media screen and (min-width: 768px) {
-      column-count: 2;
-      column-gap: 26px;
-    }
-  }
-
   &__map {
     height: 378px;
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
       height: 525px;
+      margin-bottom: 24px;
     }
 
     @media screen and (min-width: 1440px) {
-      margin: 0 32px;
+      margin: 0 32px 32px 32px;
     }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 6px;
+    column-count: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 21px;
+      column-count: 2;
+      column-gap: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      column-gap: 32px;
+    }
+  }
+
+  &__text-item {
+    margin: 0;
+    margin-bottom: 24px;
   }
 }

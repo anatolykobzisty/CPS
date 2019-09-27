@@ -1,0 +1,51 @@
+@import "./blocks/_btn-circle.scss";
+
+.site-search {
+  background-color: #000000;
+
+  &__form {
+    position: relative;
+    background: rgb(221, 34, 34);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 24px;
+    right: 48px;
+    z-index: 3;
+    display: none;
+    width: 10px;
+    height: 10px;
+  }
+
+  &__img-search {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: 3;
+    display: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__input-search {
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    box-sizing: border-box;
+    width: 13%;
+    height: 40px;
+    // background: green;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    transition-duration: 2s;
+    transition-property: width;
+  }
+
+  &__btn-search {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    outline: none;
+  }
+}

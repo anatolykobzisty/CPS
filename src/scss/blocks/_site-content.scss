@@ -1,0 +1,71 @@
+@import "./blocks/_info-company.scss";
+@import "./blocks/_sub-menu.scss";
+@import "./blocks/_brands.scss";
+@import "./blocks/_devices.scss";
+@import "./blocks/_adresses.scss";
+@import "./blocks/_btn-more.scss";
+
+.site-content {
+  box-sizing: border-box;
+  grid-area: site-content;
+  width: 100%;
+  height: 100%;
+  background: $color-bg-main;
+
+  @media screen and (min-width: 1440px) {
+    z-index: 2;
+  }
+
+  &__title {
+    @include font-lakes-bold;
+
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: $font-size--1;
+    line-height: $line-height--1;
+    color: $color-typo-primary;
+    letter-spacing: $letter-spacing--1;
+
+    &::before {
+      position: absolute;
+      top: 4px;
+      left: -16px;
+      width: 4px;
+      height: 32px;
+      content: "";
+      background-color: $color-bg-border-title;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+
+      @media screen and (min-width: 768px) {
+        left: -24px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        left: -32px;
+      }
+    }
+  }
+
+  &__container-title {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    line-height: $line-height--3;
+    color: $color-typo-secondary;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing--2;
+    background-image: $color-bg-title;
+    border-top: 1px solid $color-bg-border-nav;
+
+    @media screen and (min-width: 768px) {
+      padding: 16px 24px;
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 16px 32px;
+    }
+  }
+}

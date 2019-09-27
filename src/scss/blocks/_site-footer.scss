@@ -1,7 +1,10 @@
-.footer {
+.site-footer {
   @include font-lakes-medium;
 
+  box-sizing: border-box;
+  grid-area: site-footer;
   padding-top: 16px;
+  margin: 0 16px;
   margin-bottom: 23px;
   line-height: $line-height--4;
   color: $color-typo-secondary;
@@ -14,8 +17,13 @@
     display: flex;
     justify-content: space-between;
     padding-top: 32px;
-    padding-right: 24px;
-    padding-left: 24px;
+    margin: 0 24px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    z-index: 2;
+    margin-bottom: 32px;
   }
 
   &__item {
@@ -38,6 +46,10 @@
     @media screen and (min-width: 768px) {
       width: 213px;
       text-align: right;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 340px;
     }
   }
 }

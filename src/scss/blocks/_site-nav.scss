@@ -1,0 +1,182 @@
+@import "./blocks/_btn-circle.scss";
+@import "./blocks/_site-logo.scss";
+@import "./blocks/_site-menu.scss";
+
+.site-nav {
+  position: relative;
+  box-sizing: border-box;
+  grid-area: site-nav;
+  height: 88px;
+  background: $color-bg-nav;
+  border-bottom: 1px solid $color-bg-border-header;
+
+  @media screen and (min-width: 1440px) {
+    z-index: 3;
+    width: 320px;
+    height: 100%;
+    border-right: 1px solid $color-bg-border-header;
+    border-bottom: none;
+  }
+
+  &::before {
+    position: absolute;
+    top: 28px;
+    left: 186px;
+    width: 2px;
+    height: 32px;
+    content: "";
+    background-color: $color-bg-border;
+    border-radius: 1px;
+
+    @media screen and (min-width: 768px) {
+      left: 84px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 28px;
+      right: 140px;
+      width: 2px;
+      height: 32px;
+      content: "";
+      background-color: $color-bg-border;
+      border-radius: 1px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__btn-menu {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+
+    @media screen and (min-width: 360px) {
+      left: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+
+    @media screen and (min-width: 360px) {
+      left: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__btn-repair {
+    position: absolute;
+    top: 24px;
+    right: 72px;
+
+    @media screen and (min-width: 1440px) {
+      right: auto;
+      left: 1168px;
+    }
+  }
+
+  &__text-repair {
+    visibility: hidden;
+
+    @media screen and (min-width: 1440px) {
+      position: relative;
+      top: 32px;
+      left: 1048px;
+      visibility: visible;
+    }
+  }
+
+  &__btn-status {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+
+    @media screen and (min-width: 1440px) {
+      right: auto;
+      left: 1368px;
+    }
+  }
+
+  &__text-status {
+    visibility: hidden;
+
+    @media screen and (min-width: 1440px) {
+      position: relative;
+      top: 32px;
+      left: 1138px;
+      visibility: visible;
+    }
+  }
+
+  &__btn-call {
+    position: absolute;
+    top: 488px;
+    left: 16px;
+
+    @media screen and (min-width: 360px) {
+      left: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 804px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 704px;
+    }
+  }
+
+  &__btn-message {
+    position: absolute;
+    top: 488px;
+    left: 72px;
+
+    @media screen and (min-width: 360px) {
+      left: 80px;
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 804px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 704px;
+    }
+  }
+
+  &__btn-profile {
+    position: absolute;
+    top: 488px;
+    left: 128px;
+
+    @media screen and (min-width: 360px) {
+      left: 136px;
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 804px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 704px;
+    }
+  }
+}

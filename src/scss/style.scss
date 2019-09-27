@@ -1,11 +1,10 @@
-@import "_normalize.css";
-@import "_swiper.css";
+@import "./vendors/_normalize.css";
+@import "./vendors/_swiper.css";
 @import "_mixins.scss";
 @import "_variables.scss";
-@import "./blocks/_sidenav.scss";
-@import "./blocks/_site-title.scss";
-@import "./blocks/_main.scss";
-@import "./blocks/_footer.scss";
+@import "./blocks/_site-nav.scss";
+@import "./blocks/_site-content.scss";
+@import "./blocks/_site-footer.scss";
 @import "./blocks/_modal.scss";
 
 body {
@@ -51,21 +50,39 @@ li {
   clip-path: inset(100%);
 }
 
-.content {
+.site-wrap {
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "site-nav site-nav"
+    "site-content site-content"
+    "site-footer site-footer";
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+
   @media screen and (min-width: 1440px) {
-    margin-left: 320px;
+    display: grid;
+    grid-template-areas:
+      "site-nav site-content"
+      "site-nav site-content"
+      "site-nav site-footer";
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr;
   }
 }
 
 .container {
-  padding: 16px;
+  padding: 0 16px;
 
   @media screen and (min-width: 768px) {
-    padding: 24px;
+    padding: 0 24px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 32px;
+    padding: 0 32px;
   }
 }
 

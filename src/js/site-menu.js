@@ -1,26 +1,21 @@
-let btnMenu = document.querySelector(".sidenav__btn-menu");
-let btnClose = document.querySelector(".sidenav__btn-close");
-let btnSearch = document.querySelector(".sidenav__btn-search");
-let btnCall = document.querySelector(".sidenav__btn-call");
-let btnMessage = document.querySelector(".sidenav__btn-message");
-let btnProfile = document.querySelector(".sidenav__btn-profile");
-let menu = document.querySelector(".site-menu");
-let overlay = document.querySelector(".overlay");
+const btnMenu = document.querySelector(".site-nav__btn-menu");
+const btnClose = document.querySelector(".site-nav__btn-close");
+const btnSearch = document.querySelector(".site-nav__btn-search");
+const btnCall = document.querySelector(".site-nav__btn-call");
+const btnMessage = document.querySelector(".site-nav__btn-message");
+const btnProfile = document.querySelector(".site-nav__btn-profile");
+const menu = document.querySelector(".site-menu");
+const overlay = document.querySelector(".overlay");
 
 function openMenu() {
-  menu.style.display = "inline";
-  btnClose.style.display = "inline";
-  btnSearch.style.display = "inline";
-  btnCall.style.display = "inline";
-  btnMessage.style.display = "inline";
-  btnProfile.style.display = "inline";
-  overlay.style.display = "inline";
+  menu.classList.remove("site-menu--show");
+  overlay.style.display = "block";
 }
 
 btnMenu.addEventListener("click", openMenu);
 
 function closeMenu() {
-  menu.style.display = "none";
+  menu.classList.add("site-menu--show");
   overlay.style.display = "none";
 }
 
