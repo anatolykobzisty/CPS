@@ -1257,61 +1257,36 @@ button.swiper-pagination-bullet {
     background: #dd2222; }
   .site-search__btn-close {
     position: absolute;
-    top: 38px;
-    right: 64px;
-    z-index: 4;
+    top: 24px;
+    right: 48px;
+    z-index: 3;
     display: none;
     width: 10px;
     height: 10px; }
-    @media screen and (min-width: 360px) {
-      .site-search__btn-close {
-        right: 70px; } }
   .site-search__img-search {
     position: absolute;
-    top: 24px;
-    right: 16px;
+    top: 8px;
+    right: 0;
     z-index: 3;
     display: none;
     width: 40px;
     height: 40px; }
-    @media screen and (min-width: 360px) {
-      .site-search__img-search {
-        right: 24px; } }
   .site-search__input-search {
-    font-family: "TT Lakes-Medium", Arial, sans-serif;
     position: absolute;
-    top: 24px;
-    right: 15px;
+    top: 8px;
+    right: 2px;
     box-sizing: border-box;
-    width: 11%;
+    width: 13%;
     height: 40px;
-    padding: 8px 0 8px 16px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
     border: 1px solid #eaeaea;
     border-radius: 20px;
-    transition-duration: 2s, 2s;
-    transition-property: width, padding; }
-    @media screen and (min-width: 360px) {
-      .site-search__input-search {
-        right: 23px; } }
-    @media screen and (min-width: 1440px) {
-      .site-search__input-search {
-        top: 24px;
-        right: 150px; } }
+    transition-duration: 2s;
+    transition-property: width; }
   .site-search__btn-search {
     position: absolute;
-    top: 24px;
-    right: 16px;
+    top: 8px;
+    right: 0;
     outline: none; }
-    @media screen and (min-width: 360px) {
-      .site-search__btn-search {
-        right: 24px; } }
-    @media screen and (min-width: 1440px) {
-      .site-search__btn-search {
-        top: 24px;
-        right: 150px; } }
 
 .site-email {
   position: absolute;
@@ -1592,43 +1567,26 @@ button.swiper-pagination-bullet {
     .info-company {
       flex-direction: row;
       align-items: flex-start;
+      justify-content: space-between;
       margin-bottom: 32px; } }
   .info-company__text-wrap {
-    margin: 0 16px 16px 16px; }
+    box-sizing: border-box;
+    margin: 0 16px; }
     @media screen and (min-width: 768px) {
       .info-company__text-wrap {
-        display: inline;
-        margin: 0 24px 48px 16px; } }
+        margin: 0 24px; } }
     @media screen and (min-width: 1440px) {
       .info-company__text-wrap {
-        margin-left: 32px; } }
+        margin: 0 0 0 32px; } }
   .info-company__text {
-    margin-top: 0; }
-  .info-company__text-continuation {
-    display: none; }
+    max-height: 90px;
+    margin: 0;
+    overflow: hidden; }
     @media screen and (min-width: 768px) {
-      .info-company__text-continuation {
-        display: inline; } }
-  .info-company__dots {
-    display: inline-block; }
-    @media screen and (min-width: 768px) {
-      .info-company__dots {
-        margin-bottom: 16px; } }
-    @media screen and (min-width: 863px) {
-      .info-company__dots {
-        display: none; } }
-  .info-company__text-more {
-    display: none;
-    margin-bottom: 16px; }
-    @media screen and (min-width: 863px) {
-      .info-company__text-more {
-        display: inline; } }
+      .info-company__text {
+        max-height: 160px; } }
   .info-company__btn {
-    display: block;
-    outline: none; }
-    @media screen and (min-width: 863px) {
-      .info-company__btn {
-        margin-top: 16px; } }
+    margin: 16px 0; }
   .info-company__img-wrap {
     box-sizing: border-box; }
     @media screen and (min-width: 768px) {
@@ -1642,41 +1600,36 @@ button.swiper-pagination-bullet {
 
 .sub-menu {
   margin-bottom: 24px; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     .sub-menu {
       margin-bottom: 32px; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     .sub-menu {
       margin-bottom: 15px; } }
+  .sub-menu__slider {
+    height: 42px; }
   .sub-menu__list {
-    display: flex;
-    overflow: auto;
-    overflow-x: hidden; }
-    @media screen and (min-width: 1440px) {
-      .sub-menu__list {
-        flex-wrap: wrap;
-        overflow: initial; } }
+    display: flex; }
   .sub-menu__item {
-    font-family: "TT Lakes-Medium", Arial, sans-serif;
-    height: 40px;
-    margin-bottom: 7.5px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px; }
+    width: 100%;
+    height: 40px; }
   .sub-menu__item-link {
+    font-family: "TT Lakes-Medium", Arial, sans-serif;
     box-sizing: border-box;
     display: inline-block;
-    padding: 7.5px 20px;
+    padding: 7px 22px;
+    font-size: 16px;
+    line-height: 24px;
     color: #7e7e82;
-    white-space: nowrap;
-    border: 2px solid transparent;
-    border-radius: 6px; }
+    letter-spacing: -0.2px; }
     .sub-menu__item-link:hover {
       background-color: #ffffff;
-      border-color: #b8ffec; }
+      border: 2px solid #b8ffec;
+      border-radius: 6px; }
     .sub-menu__item-link--active {
       background-color: #ffffff;
-      border-color: #b8ffec; }
+      border: 2px solid #b8ffec;
+      border-radius: 6px; }
 
 .btn-more {
   font-family: "TT Lakes-Medium", Arial, sans-serif;
@@ -1704,6 +1657,7 @@ button.swiper-pagination-bullet {
   width: 100%; }
 
 .swiper-wrapper {
+  width: 304px;
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
@@ -1735,25 +1689,13 @@ button.swiper-pagination-bullet {
 
 .brands {
   margin-bottom: 24px; }
-  @media screen and (min-width: 768px) {
-    .brands {
-      margin-bottom: 32px; } }
-  @media screen and (min-width: 1440px) {
-    .brands {
-      margin-bottom: 50px; } }
   .brands__title {
     margin: 0;
     font-size: 16px; }
-  .brands__container {
+  .brands__slider {
     height: 100px; }
-    @media screen and (min-width: 768px) {
-      .brands__container {
-        height: 176px; } }
   .brands__list {
     display: flex; }
-    @media screen and (min-width: 768px) {
-      .brands__list {
-        flex-wrap: wrap; } }
   .brands__item {
     position: relative;
     box-sizing: border-box;
@@ -1766,13 +1708,10 @@ button.swiper-pagination-bullet {
     border-radius: 6px; }
     @media screen and (min-width: 768px) {
       .brands__item {
-        width: 224px;
-        margin-right: 24px;
-        margin-bottom: 16px; } }
+        width: 224px; } }
     @media screen and (min-width: 1440px) {
       .brands__item {
-        width: 240px;
-        margin-right: 32px; } }
+        width: 240px; } }
   .brands__item-link {
     position: absolute;
     right: 16px;
@@ -1781,15 +1720,14 @@ button.swiper-pagination-bullet {
     height: 40px;
     background-image: url(./static/arrow-right.svg); }
   .brands__btn {
-    display: none;
-    outline: none; }
+    display: none; }
     @media screen and (min-width: 768px) {
       .brands__btn {
         display: block;
-        margin: 8px 0 0 24px; } }
+        margin: 24px 0 32px 0; } }
     @media screen and (min-width: 1440px) {
       .brands__btn {
-        margin-left: 32px; } }
+        margin: 24px 0 50px 0; } }
 
 .btn-more {
   font-family: "TT Lakes-Medium", Arial, sans-serif;
@@ -1817,6 +1755,7 @@ button.swiper-pagination-bullet {
   width: 100%; }
 
 .swiper-wrapper {
+  width: 304px;
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
@@ -1848,25 +1787,13 @@ button.swiper-pagination-bullet {
 
 .devices {
   margin-bottom: 24px; }
-  @media screen and (min-width: 768px) {
-    .devices {
-      margin-bottom: 36px; } }
-  @media screen and (min-width: 1440px) {
-    .devices {
-      margin-bottom: 50px; } }
   .devices__title {
     margin: 0;
     font-size: 16px; }
-  .devices__container {
+  .devices__slider {
     height: 188px; }
-    @media screen and (min-width: 768px) {
-      .devices__container {
-        height: 176px; } }
   .devices__list {
     display: flex; }
-    @media screen and (min-width: 768px) {
-      .devices__list {
-        flex-wrap: wrap; } }
   .devices__item {
     position: relative;
     box-sizing: border-box;
@@ -1877,13 +1804,10 @@ button.swiper-pagination-bullet {
     border-radius: 6px; }
     @media screen and (min-width: 768px) {
       .devices__item {
-        width: 224px;
-        margin-right: 24px;
-        margin-bottom: 16px; } }
+        width: 224px; } }
     @media screen and (min-width: 1440px) {
       .devices__item {
-        width: 240px;
-        margin-right: 32px; } }
+        width: 240px; } }
   .devices__item-title {
     font-family: "TT Lakes-Medium", Arial, sans-serif;
     position: absolute;
@@ -1900,186 +1824,14 @@ button.swiper-pagination-bullet {
     height: 40px;
     background-image: url(./static/arrow-right.svg); }
   .devices__btn {
-    display: none;
-    outline: none; }
+    display: none; }
     @media screen and (min-width: 768px) {
       .devices__btn {
         display: block;
-        margin: 8px 0 0 24px; } }
+        margin: 24px 0 32px 0; } }
     @media screen and (min-width: 1440px) {
       .devices__btn {
-        margin-left: 32px; } }
-
-.btn-oval {
-  padding: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  width: 132px;
-  height: 32px;
-  font-size: 12px;
-  line-height: 24px;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: -0.15px;
-  background-color: #ff3e79;
-  border-radius: 16px; }
-  .btn-oval__text {
-    font-family: "TT Lakes-Bold", Arial, sans-serif;
-    position: relative;
-    left: -10px; }
-    .btn-oval__text::before {
-      position: absolute;
-      top: -4px;
-      left: 105%;
-      width: 24px;
-      height: 24px;
-      content: "";
-      background: url(./static/dropdown.svg) no-repeat 50% 50%; }
-
-.swiper-container {
-  width: 100%; }
-
-.swiper-wrapper {
-  padding-left: 16px; }
-  @media screen and (min-width: 768px) {
-    .swiper-wrapper {
-      padding-left: 24px; } }
-  @media screen and (min-width: 1440px) {
-    .swiper-wrapper {
-      padding-left: 32px; } }
-
-.swiper-slide {
-  display: flex;
-  align-items: center; }
-  .swiper-slide:last-child {
-    margin-right: 16px !important; }
-
-.swiper-pagination {
-  height: 12px; }
-
-.swiper-pagination-bullets {
-  bottom: 1px !important; }
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  margin: 0 6px !important;
-  background: #979797; }
-
-.swiper-pagination-bullet-active {
-  background: #b5b6bc; }
-
-.price {
-  margin-bottom: 12px; }
-  @media screen and (min-width: 768px) {
-    .price {
-      margin-bottom: 37px; } }
-  @media screen and (min-width: 1440px) {
-    .price {
-      margin-bottom: 95px; } }
-  .price__title {
-    margin: 0;
-    font-size: 16px; }
-  .price__container {
-    height: 228px;
-    margin-bottom: 16px; }
-    @media screen and (min-width: 768px) {
-      .price__container {
-        display: none; } }
-  .price__list {
-    display: flex; }
-  .price__item {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 260px;
-    height: 200px;
-    padding: 16px;
-    background: #ffffff;
-    border-radius: 6px; }
-  .price__item-title {
-    font-family: "TT Lakes-Medium", Arial, sans-serif;
-    margin: 0;
-    margin-bottom: 2px;
-    line-height: 16px;
-    color: #7e7e82;
-    mix-blend-mode: normal;
-    opacity: 0.72; }
-  .price__item-text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 16px; }
-  .price__item-text-term {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; }
-  .price__item-btn.btn-oval {
-    width: 119px; }
-  .price__info-text {
-    margin: 0;
-    margin-bottom: 16px; }
-  .price__link {
-    font-family: "TT Lakes-Medium", Arial, sans-serif;
-    position: relative;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px; }
-  .price__link-text::after {
-    position: absolute;
-    top: auto;
-    left: 100%;
-    width: 24px;
-    height: 24px;
-    content: "";
-    background: url(./static/red-arrow-right.svg) no-repeat 50% 50%; }
-  .price__table {
-    display: none; }
-    @media screen and (min-width: 768px) {
-      .price__table {
-        display: table;
-        width: 94%;
-        margin: 0 24px;
-        margin-bottom: 24px;
-        border-collapse: collapse;
-        border-radius: 6px; } }
-    @media screen and (min-width: 950px) {
-      .price__table {
-        width: 95%; } }
-    @media screen and (min-width: 1200px) {
-      .price__table {
-        width: 96.5%; } }
-    @media screen and (min-width: 1440px) {
-      .price__table {
-        margin: 0 32px;
-        margin-bottom: 32px; } }
-  .price__table-th {
-    padding: 16px;
-    color: #7e7e82;
-    text-align: left; }
-  .price__table-tbody {
-    background-color: #ffffff; }
-  .price__table-tr {
-    height: 64px;
-    margin: 16px;
-    border-color: #eaeaea;
-    border-top: 1px solid; }
-  .price__table-tr:first-child {
-    border: none; }
-  .price__table-td {
-    padding-left: 16px;
-    border: none; }
-  .price__table-td:last-child {
-    padding-right: 16px;
-    text-align: right; }
-  .price__table-btn.btn-oval {
-    width: 119px; }
+        margin: 24px 0 50px 0; } }
 
 .adresses {
   display: flex;
@@ -2163,7 +1915,6 @@ button.swiper-pagination-bullet {
   grid-area: site-content;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   background: #f8f8f8; }
   @media screen and (min-width: 1440px) {
     .site-content {
@@ -2423,7 +2174,6 @@ body {
   font-family: "TT Lakes-Regular", Arial, sans-serif;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
   font-size: 14px;
   line-height: 18px;
   color: #1b1c21;
