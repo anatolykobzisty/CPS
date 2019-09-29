@@ -1651,7 +1651,7 @@ button.swiper-pagination-bullet {
   .sub-menu__list {
     display: flex;
     overflow: auto;
-    overflow-x: hidden; }
+    overflow-y: hidden; }
     @media screen and (min-width: 1440px) {
       .sub-menu__list {
         flex-wrap: wrap;
