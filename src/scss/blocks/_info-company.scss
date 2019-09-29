@@ -9,35 +9,62 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
     margin-bottom: 32px;
   }
 
   &__text-wrap {
-    box-sizing: border-box;
-    margin: 0 16px;
+    margin: 0 16px 16px 16px;
 
     @media screen and (min-width: 768px) {
-      margin: 0 24px;
+      display: inline;
+      margin: 0 24px 48px 16px;
     }
 
     @media screen and (min-width: 1440px) {
-      margin: 0 0 0 32px;
+      margin-left: 32px;
     }
   }
 
   &__text {
-    max-height: 90px;
-    margin: 0;
-    overflow: hidden;
+    margin-top: 0;
+  }
+
+  &__text-continuation {
+    display: none;
 
     @media screen and (min-width: 768px) {
-      max-height: 160px;
+      display: inline;
+    }
+  }
+
+  &__dots {
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 863px) {
+      display: none;
+    }
+  }
+
+  &__text-more {
+    display: none;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 863px) {
+      display: inline;
     }
   }
 
   &__btn {
-    margin: 16px 0;
+    display: block;
+    outline: none;
+
+    @media screen and (min-width: 863px) {
+      margin-top: 16px;
+    }
   }
 
   &__img-wrap {

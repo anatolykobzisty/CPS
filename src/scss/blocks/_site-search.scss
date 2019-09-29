@@ -10,42 +10,74 @@
 
   &__btn-close {
     position: absolute;
-    top: 24px;
-    right: 48px;
-    z-index: 3;
+    top: 38px;
+    right: 64px;
+    z-index: 4;
     display: none;
     width: 10px;
     height: 10px;
+
+    @media screen and (min-width: 360px) {
+      right: 70px;
+    }
   }
 
   &__img-search {
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 24px;
+    right: 16px;
     z-index: 3;
     display: none;
     width: 40px;
     height: 40px;
+
+    @media screen and (min-width: 360px) {
+      right: 24px;
+    }
   }
 
   &__input-search {
+    @include font-lakes-medium;
+
     position: absolute;
-    top: 8px;
-    right: 2px;
+    top: 24px;
+    right: 15px;
     box-sizing: border-box;
-    width: 13%;
+    width: 11%;
     height: 40px;
+    padding: 8px 0 8px 16px;
+    font-size: $font-size--3;
+    line-height: $line-height--3;
+    letter-spacing: $letter-spacing--2;
     // background: green;
     border: 1px solid #eaeaea;
     border-radius: 20px;
-    transition-duration: 2s;
-    transition-property: width;
+    transition-duration: 2s, 2s;
+    transition-property: width, padding;
+
+    @media screen and (min-width: 360px) {
+      right: 23px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 24px;
+      right: 150px;
+    }
   }
 
   &__btn-search {
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 24px;
+    right: 16px;
     outline: none;
+
+    @media screen and (min-width: 360px) {
+      right: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 24px;
+      right: 150px;
+    }
   }
 }

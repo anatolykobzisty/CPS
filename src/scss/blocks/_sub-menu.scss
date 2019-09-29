@@ -1,48 +1,52 @@
 .sub-menu {
   margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     margin-bottom: 32px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     margin-bottom: 15px;
-  }
-
-  &__slider {
-    height: 42px;
   }
 
   &__list {
     display: flex;
+    overflow: auto;
+    overflow-y: hidden;
+
+    @media screen and (min-width: 1440px) {
+      flex-wrap: wrap;
+      overflow: initial;
+    }
   }
 
   &__item {
-    width: 100%;
+    @include font-lakes-medium;
+
     height: 40px;
+    margin-bottom: 7.5px;
+    font-size: $font-size--3;
+    line-height: $line-height--3;
+    letter-spacing: $letter-spacing--2;
   }
 
   &__item-link {
-    @include font-lakes-medium;
-
     box-sizing: border-box;
     display: inline-block;
-    padding: 7px 22px;
-    font-size: $font-size--3;
-    line-height: $line-height--3;
+    padding: 7.5px 20px;
     color: $color-typo-secondary;
-    letter-spacing: $letter-spacing--2;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    border-radius: 6px;
 
     &:hover {
       background-color: $color-bg-nav;
-      border: 2px solid $color-bg-border-menu;
-      border-radius: 6px;
+      border-color: $color-bg-border-menu;
     }
 
     &--active {
       background-color: $color-bg-nav;
-      border: 2px solid $color-bg-border-menu;
-      border-radius: 6px;
+      border-color: $color-bg-border-menu;
     }
   }
 }

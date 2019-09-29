@@ -1,39 +1,34 @@
 import Swiper from "swiper";
-const brandSlider = document.querySelector(".brands__slider");
-const deviceSlider = document.querySelector(".devices__slider");
-const subMenuSlider = document.querySelector(".sub-menu__slider");
 
-let brandSwiper = new Swiper(brandSlider, {
-  slidesPerView: "auto",
-  spaceBetween: 16,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true
-  }
-});
+(function() {
+  "use strict";
 
-let deviceSwiper = new Swiper(deviceSlider, {
-  slidesPerView: "auto",
-  spaceBetween: 16,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true
-  }
-});
+  const breakpoint = window.matchMedia("(min-width: 768px)");
+  let mySwiper;
 
-let subMenuSwiper = new Swiper(subMenuSlider, {
-  slidesPerView: "auto",
-  spaceBetween: 16,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true
-  }
-});
+  const enableSwiper = function() {
+    mySwiper = new Swiper(".swiper-container", {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      a11y: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+  };
+
+  const breakpointChecker = function() {
+    if (breakpoint.matches === true) {
+      if (mySwiper !== undefined) mySwiper.destroy(true, true);
+      return;
+    } else if (breakpoint.matches === false) {
+      return enableSwiper();
+    }
+  };
+
+  breakpoint.addListener(breakpointChecker);
+
+  breakpointChecker();
+})();

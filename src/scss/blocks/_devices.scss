@@ -4,17 +4,33 @@
 .devices {
   margin-bottom: 24px;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 50px;
+  }
+
   &__title {
     margin: 0;
     font-size: $font-size--3;
   }
 
-  &__slider {
+  &__container {
     height: 188px;
+
+    @media screen and (min-width: 768px) {
+      height: 176px;
+    }
   }
 
   &__list {
     display: flex;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -28,10 +44,13 @@
 
     @media screen and (min-width: 768px) {
       width: 224px;
+      margin-right: 24px;
+      margin-bottom: 16px;
     }
 
     @media screen and (min-width: 1440px) {
       width: 240px;
+      margin-right: 32px;
     }
   }
 
@@ -57,14 +76,15 @@
 
   &__btn {
     display: none;
+    outline: none;
 
     @media screen and (min-width: 768px) {
       display: block;
-      margin: 24px 0 32px 0;
+      margin: 8px 0 0 24px;
     }
 
     @media screen and (min-width: 1440px) {
-      margin: 24px 0 50px 0;
+      margin-left: 32px;
     }
   }
 }

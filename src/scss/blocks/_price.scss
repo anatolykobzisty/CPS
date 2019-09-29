@@ -1,0 +1,161 @@
+@import "./blocks/_btn-oval.scss";
+@import "./blocks/_slider.scss";
+
+.price {
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 37px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 95px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $font-size--3;
+  }
+
+  &__container {
+    height: 228px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+    background: $color-bg-nav;
+    border-radius: 6px;
+  }
+
+  &__item-title {
+    @include font-lakes-medium;
+
+    margin: 0;
+    margin-bottom: 2px;
+    line-height: $line-height--4;
+    color: $color-typo-secondary;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  &__item-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__item-text-term {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item-btn.btn-oval {
+    width: 119px;
+  }
+
+  &__info-text {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    @include font-lakes-medium;
+
+    position: relative;
+    font-size: $font-size--3;
+    line-height: $line-height--3;
+    letter-spacing: $letter-spacing--2;
+  }
+
+  &__link-text {
+    &::after {
+      position: absolute;
+      top: auto;
+      left: 100%;
+      width: 24px;
+      height: 24px;
+      content: "";
+      background: url("../img/red-arrow-right.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &__table {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: table;
+      width: 94%;
+      margin: 0 24px;
+      margin-bottom: 24px;
+      border-collapse: collapse;
+      border-radius: 6px;
+    }
+
+    @media screen and (min-width: 950px) {
+      width: 95%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 96.5%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: 0 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__table-th {
+    padding: 16px;
+    color: $color-typo-secondary;
+    text-align: left;
+  }
+
+  &__table-tbody {
+    background-color: $color-bg-nav;
+  }
+
+  &__table-tr {
+    height: 64px;
+    margin: 16px;
+    border-color: $color-bg-border;
+    border-top: 1px solid;
+  }
+
+  &__table-tr:first-child {
+    border: none;
+  }
+
+  &__table-td {
+    padding-left: 16px;
+    border: none;
+  }
+
+  &__table-td:last-child {
+    padding-right: 16px;
+    text-align: right;
+  }
+
+  &__table-btn.btn-oval {
+    width: 119px;
+  }
+}

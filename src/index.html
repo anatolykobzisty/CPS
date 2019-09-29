@@ -38,7 +38,7 @@
           ></button>
           <span class="site-nav__text-status">Статус ремонта</span>
           <nav class="site-menu site-menu--show">
-            <!-- <div class="site-search">
+            <div class="site-search">
               <form class="site-search__form" action="#">
                 <svg
                   class="site-search__btn-close"
@@ -93,7 +93,7 @@
                   <span class="visually-hidden">Поиск</span>
                 </button>
               </form>
-            </div> -->
+            </div>
             <button
               class="site-nav__btn-close btn-circle btn-circle--close"
               type="button"
@@ -174,54 +174,26 @@
       <main class="site-content">
         <div class="container">
           <h1 class="site-content__title">Услуги и сервисы</h1>
-        </div>
-        <section class="sub-menu">
-          <div class="sub-menu__slider swiper-container">
-            <ul class="sub-menu__list swiper-wrapper">
-              <li class="sub-menu__item swiper-slide">
-                <a class="sub-menu__item-link sub-menu__item-link--active" href="#brands">
-                  Ремонтируемые бренды
-                </a>
-              </li>
-              <li class="sub-menu__item swiper-slide">
-                <a class="sub-menu__item-link" href="#divices">
-                    Ремонтируемые устройства
-                </a>
-              </li>
-              <li class="sub-menu__item swiper-slide">
-                <a class="sub-menu__item-link" href="#price">
-                    Цены на услуги
-                </a>
-              </li>
-              <li class="sub-menu__item swiper-slide">
-                <a class="sub-menu__item-link" href="#adresses">
-                    Адреса сервисных центров
-                </a>
-              </li>
-              <li class="sub-menu__item swiper-slide">
-                <a class="sub-menu__item-link" href="#price__offer">
-                    Специальные цены
-                </a>
-              </li>
-              <li class="sub-menu__item swiper-slide">
-                <a class="sub-menu__item-link" href="#">
-                    Отзывы
-                </a>
-              </li>
+          <nav class="sub-menu">
+            <ul class="sub-menu__list">
+              <li class="sub-menu__item"><a href="#brands" class=" sub-menu__item-link sub-menu__item-link--active">Ремонтируемые бренды</a></li>
+              <li class="sub-menu__item"><a href="#divices" class=" sub-menu__item-link">Дополнительные услуги</a></li>
+              <li class="sub-menu__item"><a href="#price" class=" sub-menu__item-link">Цены на услуги</a></li>
+              <li class="sub-menu__item"><a href="#adresses" class=" sub-menu__item-link">Адреса сервисных центров</a></li>
+              <li class="sub-menu__item"><a href="#price__offer" class=" sub-menu__item-link">Специальные цены</a></li>
+              <li class="sub-menu__item"><a href="#" class="sub-menu__item-link">Отзывы</a></li>
             </ul>
-          </div>
-        </section>
+          </nav>
+        </div>
         <section class="info-company">
           <div class="info-company__text-wrap">
-            <p class="info-company__text">
+            <p class="info-company__text info-company__text-introductory">
               Мы являемся авторизованным сервисным центром по ремонту техники
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
               официальной гарантией производителя.
-              <br />
-              <br />
-              Мы успешно работаем с 1992 года и заслужили
-              <span class="info-company__dots">...</span>
-              <span class="info-company__text info-company__text-more">
+            </p>
+            <p class="info-company__text info-company__text-continuation">
+                Мы успешно работаем с 1992 года и заслужи<span class="info-company__dots">...</span><span class="info-company__text-more">ли
                 репутацию надежного партнера, что подтверждает большое
                 количество постоянных клиентов. Мы гордимся тем, что к нам
                 обращаются по рекомендациям и, в свою очередь, советуют нас
@@ -247,7 +219,7 @@
           <div class="site-content__container-title">
             <h3 class="brands__title">Ремонт техники различных брендов</h3>
           </div>
-          <div class="brands__slider swiper-container">
+          <div class="brands__container swiper-container">
             <ul class="brands__list swiper-wrapper">
               <li class="brands__item swiper-slide">
                 <img
@@ -409,7 +381,7 @@
           <div class="site-content__container-title">
             <h3 class="devices__title">Ремонт различных видов техники</h3>
           </div>
-          <div class="devices__slider swiper-container">
+          <div class="devices__container swiper-container">
             <ul class="devices__list swiper-wrapper">
               <li class="devices__item swiper-slide">
                 <span class="devices__item-title">Ремонт ноутбуков</span>
@@ -454,61 +426,230 @@
             <span class="btn-more__text">Показать все (9)</span>
           </button>
         </section>
-        <section class="adresses">
-          <a class="visually-hidden" name="adresses"></a>
+        <section class="price">
+          <a class="visually-hidden" name="price"></a>
           <div class="site-content__container-title">
-            <h3 class="adresses__title">Адреса сервисных центров</h3>
+            <h3 class="price__title">Цены на услуги</h3>
           </div>
-          <div class="adresses__link-wrap">
-            <span class="adresses__link">
-              <a href="#" class="adresses__link-text">Наши партнеры</a>
-            </span>
+          <div class="price__container swiper-container">
+            <ul class="price__list swiper-wrapper">
+              <li class="price__item swiper-slide">
+                <h4 class="price__item-title">Ремонтные услуги</h4>
+                <p class="price__item-text">
+                  Тестирование с выдачей технического заключения
+                </p>
+                <h4 class="price__item-title">Цена</h4>
+                <p class="price__item-text">
+                  1000 р
+                </p>
+                <h4 class="price__item-title">Срок</h4>
+                <p class="price__item-text price__item-text-term">
+                  30-120 мин
+                  <button class="price__item-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </p>
+              </li>
+              <li class="price__item swiper-slide">
+                <h4 class="price__item-title">Ремонтные услуги</h4>
+                <p class="price__item-text">
+                  Диагностика
+                </p>
+                <h4 class="price__item-title">Цена</h4>
+                <p class="price__item-text">
+                  Бесплатно
+                </p>
+                <h4 class="price__item-title">Срок</h4>
+                <p class="price__item-text price__item-text-term">
+                  30 мин
+                  <button class="price__item-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </p>
+              </li>
+              <li class="price__item swiper-slide">
+                <h4 class="price__item-title">Ремонтные услуги</h4>
+                <p class="price__item-text">
+                  Замена дисплея
+                </p>
+                <h4 class="price__item-title">Цена</h4>
+                <p class="price__item-text">
+                  1000 р
+                </p>
+                <h4 class="price__item-title">Срок</h4>
+                <p class="price__item-text price__item-text-term">
+                  30-120 мин
+                  <button class="price__item-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </p>
+              </li>
+              <li class="price__item swiper-slide">
+                <h4 class="price__item-title">Ремонтные услуги</h4>
+                <p class="price__item-text">
+                  Замена полифонического динамика
+                </p>
+                <h4 class="price__item-title">Цена</h4>
+                <p class="price__item-text">
+                  1000 р
+                </p>
+                <h4 class="price__item-title">Срок</h4>
+                <p class="price__item-text price__item-text-term">
+                  <span>30-120 мин</span>
+                  <button class="price__item-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </p>
+              </li>
+              <li class="price__item swiper-slide">
+                <h4 class="price__item-title">Ремонтные услуги</h4>
+                <p class="price__item-text">
+                  Замена программного обеспечения
+                </p>
+                <h4 class="price__item-title">Цена</h4>
+                <p class="price__item-text">
+                  1000 р
+                </p>
+                <h4 class="price__item-title">Срок</h4>
+                <p class="price__item-text">
+                  30-120 мин
+                  <button class="price__item-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </p>
+              </li>
+            </ul>
+            <div class="price__pagination swiper-pagination"></div>
           </div>
-          <div class="adresses__map">
-            <iframe
-              class="adesses__map"
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d34369.886568881484!2d37.62729207631548!3d55.754765399783615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sapp%20store!5e0!3m2!1sru!2skz!4v1568797090096!5m2!1sru!2skz"
-              width="100%"
-              height="100%"
-              frameborder="0"
-              style="border: 0;"
-              allowfullscreen=""
-            ></iframe>
-          </div>
+          <table class="price__table">
+            <thead class="price__table-thead">
+              <tr class="price__table-head">
+                <th class="price__table-th">Ремонтные услуги</th>
+                <th class="price__table-th">Цена</th>
+                <th class="price__table-th">Срок</th>
+                <th class="price__table-th"></th>
+              </tr>
+            </thead>
+            <tbody class="price__table-tbody">
+              <tr class="price__table-tr">
+                <td class="price__table-td">Диагностика</td>
+                <td class="price__table-td">Бесплатно</td>
+                <td class="price__table-td">30 мин</td>
+                <td class="price__table-td">
+                  <button class="price__table-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="price__table-tr">
+                <td class="price__table-td">Замена дисплея</td>
+                <td class="price__table-td">1000 &#x20bd</td>
+                <td class="price__table-td">30-120 мин</td>
+                <td class="price__table-td">
+                  <button class="price__table-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="price__table-tr">
+                <td class="price__table-td">Замена полифонического динамика</td>
+                <td class="price__table-td">1000 &#x20bd</td>
+                <td class="price__table-td">30-120 мин</td>
+                <td class="price__table-td">
+                  <button class="price__table-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="price__table-tr">
+                <td class="price__table-td">Тестирование с выдачей технического заключения</td>
+                <td class="price__table-td">1000 &#x20bd</td>
+                <td class="price__table-td">30-120 мин</td>
+                <td class="price__table-td">
+                  <button class="price__table-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="price__table-tr">
+                <td class="price__table-td">Замена программного обеспечения</td>
+                <td class="price__table-td">1000 &#x20bd</td>
+                <td class="price__table-td">30-120 мин</td>
+                <td class="price__table-td">
+                  <button class="price__table-btn btn-oval" type="button">
+                    <span class="btn-oval__text">Заказать</span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <div class="container">
-            <div class="adresses__text">
-              <p class="adresses__text-item">
-                Наши сервисные центры расположены по всей России, в таких
-                городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
-                владивосток, и др. Все сервисные центры являются авторизованными
-                и имеют единую базу и проходят ежемесячную проверку качества
-                оказываемых услуг.
-              </p>
-              <p class="adresses__text-item">
-                Наши сервисные центры расположены по всей России, в таких
-                городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
-                владивосток, и др. Все сервисные центры являются авторизованными
-                и имеют единую базу и проходят ежемесячную проверку качества
-                оказываемых услуг.
-              </p>
-              <p class="adresses__text-item">
-                Наши сервисные центры расположены по всей России, в таких
-                городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
-                владивосток, и др. Все сервисные центры являются авторизованными
-                и имеют единую базу и проходят ежемесячную проверку качества
-                оказываемых услуг.
-              </p>
-              <p class="adresses__text-item">
-                Наши сервисные центры расположены по всей России, в таких
-                городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
-                владивосток, и др. Все сервисные центры являются авторизованными
-                и имеют единую базу и проходят ежемесячную проверку качества
-                оказываемых услуг.
-              </p>
-              </p>
-            </div>
+            <p class="price__info-text">
+              Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.
+            </p>
+            <a href="#" class="price__link" name="price__offer">
+              Получить коммерческое
+              <span class="price__link-text">предложение</span>
+            </a>
           </div>
         </section>
+      <section class="adresses">
+        <a class="visually-hidden" name="adresses"></a>
+        <div class="site-content__container-title">
+          <h3 class="adresses__title">Адреса сервисных центров</h3>
+        </div>
+        <div class="adresses__link-wrap">
+          <span class="adresses__link">
+            <a href="#" class="adresses__link-text">Наши партнеры</a>
+          </span>
+        </div>
+        <div class="adresses__map">
+          <iframe
+            class="adesses__map"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d34369.886568881484!2d37.62729207631548!3d55.754765399783615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sapp%20store!5e0!3m2!1sru!2skz!4v1568797090096!5m2!1sru!2skz"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+        <div class="container">
+          <div class="adresses__text">
+            <p class="adresses__text-item">
+              Наши сервисные центры расположены по всей России, в таких
+              городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
+              владивосток, и др. Все сервисные центры являются авторизованными
+              и имеют единую базу и проходят ежемесячную проверку качества
+              оказываемых услуг.
+            </p>
+            <p class="adresses__text-item">
+              Наши сервисные центры расположены по всей России, в таких
+              городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
+              владивосток, и др. Все сервисные центры являются авторизованными
+              и имеют единую базу и проходят ежемесячную проверку качества
+              оказываемых услуг.
+            </p>
+            <p class="adresses__text-item">
+              Наши сервисные центры расположены по всей России, в таких
+              городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
+              владивосток, и др. Все сервисные центры являются авторизованными
+              и имеют единую базу и проходят ежемесячную проверку качества
+              оказываемых услуг.
+            </p>
+            <p class="adresses__text-item">
+              Наши сервисные центры расположены по всей России, в таких
+              городах, как Москва, Санкт-Петербург, Казань, Нижний Новгород,
+              владивосток, и др. Все сервисные центры являются авторизованными
+              и имеют единую базу и проходят ежемесячную проверку качества
+              оказываемых услуг.
+            </p>
+            </p>
+          </div>
+        </div>
+      </section>
       </main>
       <footer class="site-footer">
         <p class="site-footer__item site-footer__item-copyright">
