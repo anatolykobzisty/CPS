@@ -1657,7 +1657,6 @@ button.swiper-pagination-bullet {
   width: 100%; }
 
 .swiper-wrapper {
-  width: 304px;
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
@@ -1755,7 +1754,6 @@ button.swiper-pagination-bullet {
   width: 100%; }
 
 .swiper-wrapper {
-  width: 304px;
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
