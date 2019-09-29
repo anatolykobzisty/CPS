@@ -2039,47 +2039,6 @@ button.swiper-pagination-bullet {
     height: 24px;
     content: "";
     background: url(./static/red-arrow-right.svg) no-repeat 50% 50%; }
-  .price__table {
-    display: none; }
-    @media screen and (min-width: 768px) {
-      .price__table {
-        display: table;
-        width: 94%;
-        margin: 0 24px;
-        margin-bottom: 24px;
-        border-collapse: collapse;
-        border-radius: 6px; } }
-    @media screen and (min-width: 950px) {
-      .price__table {
-        width: 95%; } }
-    @media screen and (min-width: 1200px) {
-      .price__table {
-        width: 96.5%; } }
-    @media screen and (min-width: 1440px) {
-      .price__table {
-        margin: 0 32px;
-        margin-bottom: 32px; } }
-  .price__table-th {
-    padding: 16px;
-    color: #7e7e82;
-    text-align: left; }
-  .price__table-tbody {
-    background-color: #ffffff; }
-  .price__table-tr {
-    height: 64px;
-    margin: 16px;
-    border-color: #eaeaea;
-    border-top: 1px solid; }
-  .price__table-tr:first-child {
-    border: none; }
-  .price__table-td {
-    padding-left: 16px;
-    border: none; }
-  .price__table-td:last-child {
-    padding-right: 16px;
-    text-align: right; }
-  .price__table-btn.btn-oval {
-    width: 119px; }
 
 .adresses {
   display: flex;
