@@ -2044,7 +2044,7 @@ button.swiper-pagination-bullet {
     @media screen and (min-width: 768px) {
       .price__table {
         display: table;
-        width: 94%;
+        width: 720px;
         margin: 0 24px;
         margin-bottom: 24px;
         border-collapse: collapse;
@@ -2421,10 +2421,8 @@ button.swiper-pagination-bullet {
 
 body {
   font-family: "TT Lakes-Regular", Arial, sans-serif;
-  min-height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
   font-size: 14px;
   line-height: 18px;
   color: #1b1c21;
@@ -2465,17 +2463,17 @@ li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: grid;
-  grid-template-areas: "site-nav" "site-content" "site-footer";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  grid-template-areas: "site-nav site-nav" "site-content site-content" "site-footer site-footer";
+  grid-template-rows: 88px auto auto;
+  grid-template-columns: 1fr 1fr;
   max-width: 1440px;
   margin: 0 auto; }
   @media screen and (min-width: 1440px) {
     .site-wrap {
       display: grid;
       grid-template-areas: "site-nav site-content" "site-nav site-content" "site-nav site-footer";
-      grid-template-rows: 1fr;
-      grid-template-columns: 1fr; } }
+      grid-template-rows: 1fr auto auto;
+      grid-template-columns: 320px 1fr; } }
 
 .container {
   padding: 0 16px; }
