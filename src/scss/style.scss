@@ -58,8 +58,8 @@ li {
     "site-nav site-nav"
     "site-content site-content"
     "site-footer site-footer";
-  grid-template-rows: 1fr, 1fr, 1fr;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 88px auto auto;
+  grid-template-columns: 1fr 1fr;
   max-width: 1440px;
   margin: 0 auto;
 
@@ -69,8 +69,8 @@ li {
       "site-nav site-content"
       "site-nav site-content"
       "site-nav site-footer";
-    grid-template-rows: 1fr, 1fr, 1fr;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns: 320px 1fr;
   }
 }
 
