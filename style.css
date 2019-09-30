@@ -1882,6 +1882,178 @@ button.swiper-pagination-bullet {
       .devices__btn {
         margin-left: 32px; } }
 
+.btn-oval {
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 132px;
+  height: 32px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.15px;
+  background-color: #ff3e79;
+  border-radius: 16px; }
+  .btn-oval__text {
+    font-family: "TT Lakes-Bold", Arial, sans-serif;
+    position: relative;
+    left: -10px; }
+    .btn-oval__text::before {
+      position: absolute;
+      top: -4px;
+      left: 105%;
+      width: 24px;
+      height: 24px;
+      content: "";
+      background: url(./static/dropdown.svg) no-repeat 50% 50%; }
+
+.swiper-container {
+  width: 100%; }
+
+.swiper-wrapper {
+  width: 304px;
+  padding-left: 16px; }
+  @media screen and (min-width: 768px) {
+    .swiper-wrapper {
+      padding-left: 24px; } }
+  @media screen and (min-width: 1440px) {
+    .swiper-wrapper {
+      padding-left: 32px; } }
+
+.swiper-slide {
+  display: flex;
+  align-items: center; }
+  .swiper-slide:last-child {
+    margin-right: 16px !important; }
+
+.swiper-pagination {
+  height: 12px; }
+
+.swiper-pagination-bullets {
+  bottom: 1px !important; }
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px !important;
+  background: #979797; }
+
+.swiper-pagination-bullet-active {
+  background: #b5b6bc; }
+
+.price {
+  margin-bottom: 12px; }
+  @media screen and (min-width: 768px) {
+    .price {
+      margin-bottom: 37px; } }
+  @media screen and (min-width: 1440px) {
+    .price {
+      margin-bottom: 95px; } }
+  .price__title {
+    margin: 0;
+    font-size: 16px; }
+  .price__container {
+    height: 228px;
+    margin-bottom: 16px; }
+    @media screen and (min-width: 768px) {
+      .price__container {
+        display: none; } }
+  .price__list {
+    display: flex; }
+  .price__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 6px; }
+  .price__item-title {
+    font-family: "TT Lakes-Medium", Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 2px;
+    line-height: 16px;
+    color: #7e7e82;
+    mix-blend-mode: normal;
+    opacity: 0.72; }
+  .price__item-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 16px; }
+  .price__item-text-term {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  .price__item-btn.btn-oval {
+    width: 119px; }
+  .price__info-text {
+    margin: 0;
+    margin-bottom: 16px; }
+  .price__link {
+    font-family: "TT Lakes-Medium", Arial, sans-serif;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px; }
+  .price__link-text::after {
+    position: absolute;
+    top: auto;
+    left: 100%;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background: url(./static/red-arrow-right.svg) no-repeat 50% 50%; }
+  .price__table {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .price__table {
+        display: table;
+        width: 94%;
+        margin: 0 24px;
+        margin-bottom: 24px;
+        border-collapse: collapse;
+        border-radius: 6px; } }
+    @media screen and (min-width: 950px) {
+      .price__table {
+        width: 95%; } }
+    @media screen and (min-width: 1200px) {
+      .price__table {
+        width: 96.5%; } }
+    @media screen and (min-width: 1440px) {
+      .price__table {
+        margin: 0 32px;
+        margin-bottom: 32px; } }
+  .price__table-th {
+    padding: 16px;
+    color: #7e7e82;
+    text-align: left; }
+  .price__table-tbody {
+    background-color: #ffffff; }
+  .price__table-tr {
+    height: 64px;
+    margin: 16px;
+    border-color: #eaeaea;
+    border-top: 1px solid; }
+  .price__table-tr:first-child {
+    border: none; }
+  .price__table-td {
+    padding-left: 16px;
+    border: none; }
+  .price__table-td:last-child {
+    padding-right: 16px;
+    text-align: right; }
+  .price__table-btn.btn-oval {
+    width: 119px; }
+
 .adresses {
   display: flex;
   flex-direction: column; }
