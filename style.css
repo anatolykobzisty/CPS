@@ -1703,7 +1703,14 @@ button.swiper-pagination-bullet {
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
+      width: 94%;
       padding-left: 24px; } }
+  @media screen and (min-width: 950px) {
+    .swiper-wrapper {
+      width: 95%; } }
+  @media screen and (min-width: 1200px) {
+    .swiper-wrapper {
+      width: 96.5%; } }
   @media screen and (min-width: 1440px) {
     .swiper-wrapper {
       padding-left: 32px; } }
@@ -1817,7 +1824,14 @@ button.swiper-pagination-bullet {
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
+      width: 94%;
       padding-left: 24px; } }
+  @media screen and (min-width: 950px) {
+    .swiper-wrapper {
+      width: 95%; } }
+  @media screen and (min-width: 1200px) {
+    .swiper-wrapper {
+      width: 96.5%; } }
   @media screen and (min-width: 1440px) {
     .swiper-wrapper {
       padding-left: 32px; } }
@@ -1944,7 +1958,14 @@ button.swiper-pagination-bullet {
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
+      width: 94%;
       padding-left: 24px; } }
+  @media screen and (min-width: 950px) {
+    .swiper-wrapper {
+      width: 95%; } }
+  @media screen and (min-width: 1200px) {
+    .swiper-wrapper {
+      width: 96.5%; } }
   @media screen and (min-width: 1440px) {
     .swiper-wrapper {
       padding-left: 32px; } }
