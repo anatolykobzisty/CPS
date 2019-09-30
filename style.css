@@ -1257,36 +1257,61 @@ button.swiper-pagination-bullet {
     background: #dd2222; }
   .site-search__btn-close {
     position: absolute;
-    top: 24px;
-    right: 48px;
-    z-index: 3;
+    top: 38px;
+    right: 64px;
+    z-index: 4;
     display: none;
     width: 10px;
     height: 10px; }
+    @media screen and (min-width: 360px) {
+      .site-search__btn-close {
+        right: 70px; } }
   .site-search__img-search {
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 24px;
+    right: 16px;
     z-index: 3;
     display: none;
     width: 40px;
     height: 40px; }
+    @media screen and (min-width: 360px) {
+      .site-search__img-search {
+        right: 24px; } }
   .site-search__input-search {
+    font-family: "TT Lakes-Medium", Arial, sans-serif;
     position: absolute;
-    top: 8px;
-    right: 2px;
+    top: 24px;
+    right: 15px;
     box-sizing: border-box;
-    width: 13%;
+    width: 11%;
     height: 40px;
+    padding: 8px 0 8px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     border: 1px solid #eaeaea;
     border-radius: 20px;
-    transition-duration: 2s;
-    transition-property: width; }
+    transition-duration: 2s, 2s;
+    transition-property: width, padding; }
+    @media screen and (min-width: 360px) {
+      .site-search__input-search {
+        right: 23px; } }
+    @media screen and (min-width: 1440px) {
+      .site-search__input-search {
+        top: 24px;
+        right: 150px; } }
   .site-search__btn-search {
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 24px;
+    right: 16px;
     outline: none; }
+    @media screen and (min-width: 360px) {
+      .site-search__btn-search {
+        right: 24px; } }
+    @media screen and (min-width: 1440px) {
+      .site-search__btn-search {
+        top: 24px;
+        right: 150px; } }
 
 .site-email {
   position: absolute;
