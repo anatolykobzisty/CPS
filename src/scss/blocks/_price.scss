@@ -98,64 +98,64 @@
     }
   }
 
-  //   &__table {
-  //     display: none;
+  &__table {
+    display: none;
 
-  //     @media screen and (min-width: 768px) {
-  //       display: table;
-  //       width: 94%;
-  //       margin: 0 24px;
-  //       margin-bottom: 24px;
-  //       border-collapse: collapse;
-  //       border-radius: 6px;
-  //     }
+    @media screen and (min-width: 768px) {
+      display: table;
+      width: 94%;
+      margin: 0 24px;
+      margin-bottom: 24px;
+      border-collapse: collapse;
+      border-radius: 6px;
+    }
 
-  //     @media screen and (min-width: 950px) {
-  //       width: 95%;
-  //     }
+    @media screen and (min-width: 950px) {
+      width: 95%;
+    }
 
-  //     @media screen and (min-width: 1200px) {
-  //       width: 96.5%;
-  //     }
+    @media screen and (min-width: 1200px) {
+      width: 96.5%;
+    }
 
-  //     @media screen and (min-width: 1440px) {
-  //       margin: 0 32px;
-  //       margin-bottom: 32px;
-  //     }
-  //   }
+    @media screen and (min-width: 1440px) {
+      margin: 0 32px;
+      margin-bottom: 32px;
+    }
+  }
 
-  //   &__table-th {
-  //     padding: 16px;
-  //     color: $color-typo-secondary;
-  //     text-align: left;
-  //   }
+  &__table-th {
+    padding: 16px;
+    color: $color-typo-secondary;
+    text-align: left;
+  }
 
-  //   &__table-tbody {
-  //     background-color: $color-bg-nav;
-  //   }
+  &__table-tbody {
+    background-color: $color-bg-nav;
+  }
 
-  //   &__table-tr {
-  //     height: 64px;
-  //     margin: 16px;
-  //     border-color: $color-bg-border;
-  //     border-top: 1px solid;
-  //   }
+  &__table-tr {
+    height: 64px;
+    margin: 16px;
+    border-color: $color-bg-border;
+    border-top: 1px solid;
+  }
 
-  //   &__table-tr:first-child {
-  //     border: none;
-  //   }
+  &__table-tr:first-child {
+    border: none;
+  }
 
-  //   &__table-td {
-  //     padding-left: 16px;
-  //     border: none;
-  //   }
+  &__table-td {
+    padding-left: 16px;
+    border: none;
+  }
 
-  //   &__table-td:last-child {
-  //     padding-right: 16px;
-  //     text-align: right;
-  //   }
+  &__table-td:last-child {
+    padding-right: 16px;
+    text-align: right;
+  }
 
-  //   &__table-btn.btn-oval {
-  //     width: 119px;
-  //   }
+  &__table-btn.btn-oval {
+    width: 119px;
+  }
 }
