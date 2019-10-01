@@ -88,6 +88,7 @@
     right: 72px;
 
     @media screen and (min-width: 1440px) {
+      position: relative;
       right: auto;
       left: 1168px;
     }
@@ -97,9 +98,9 @@
     visibility: hidden;
 
     @media screen and (min-width: 1440px) {
-      position: relative;
-      top: 32px;
-      left: 1048px;
+      position: absolute;
+      top: 10px;
+      left: -118px;
       visibility: visible;
     }
   }
@@ -110,6 +111,7 @@
     right: 16px;
 
     @media screen and (min-width: 1440px) {
+      position: relative;
       right: auto;
       left: 1368px;
     }
@@ -119,9 +121,9 @@
     visibility: hidden;
 
     @media screen and (min-width: 1440px) {
-      position: relative;
-      top: 32px;
-      left: 1138px;
+      position: absolute;
+      top: 10px;
+      left: -118px;
       visibility: visible;
     }
   }
