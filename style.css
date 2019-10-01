@@ -1515,15 +1515,16 @@ button.swiper-pagination-bullet {
     right: 72px; }
     @media screen and (min-width: 1440px) {
       .site-nav__btn-repair {
+        position: relative;
         right: auto;
         left: 1168px; } }
   .site-nav__text-repair {
     visibility: hidden; }
     @media screen and (min-width: 1440px) {
       .site-nav__text-repair {
-        position: relative;
-        top: 32px;
-        left: 1048px;
+        position: absolute;
+        top: 10px;
+        left: -118px;
         visibility: visible; } }
   .site-nav__btn-status {
     position: absolute;
@@ -1531,15 +1532,16 @@ button.swiper-pagination-bullet {
     right: 16px; }
     @media screen and (min-width: 1440px) {
       .site-nav__btn-status {
+        position: relative;
         right: auto;
         left: 1368px; } }
   .site-nav__text-status {
     visibility: hidden; }
     @media screen and (min-width: 1440px) {
       .site-nav__text-status {
-        position: relative;
-        top: 32px;
-        left: 1138px;
+        position: absolute;
+        top: 10px;
+        left: -118px;
         visibility: visible; } }
   .site-nav__btn-call {
     position: absolute;
@@ -2421,8 +2423,10 @@ button.swiper-pagination-bullet {
 
 body {
   font-family: "TT Lakes-Regular", Arial, sans-serif;
+  min-height: 100%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-size: 14px;
   line-height: 18px;
   color: #1b1c21;
