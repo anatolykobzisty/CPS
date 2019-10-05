@@ -2469,7 +2469,6 @@ body {
   font-family: "TT Lakes-Regular", Arial, sans-serif;
   min-height: 100%;
   padding: 0;
-  overflow-x: hidden;
   font-size: 14px;
   line-height: 18px;
   color: #1b1c21;
@@ -2505,7 +2504,8 @@ li {
   display: grid;
   grid-template-areas: "site-header site-header" "site-menu site-menu" "site-content site-content" "site-footer site-footer";
   grid-template-rows: 88px auto auto auto;
-  grid-template-columns: 160px 160px; }
+  grid-template-columns: 160px 160px;
+  overflow-x: hidden; }
   @media screen and (min-width: 1440px) {
     .site-wrap {
       display: grid;
