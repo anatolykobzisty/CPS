@@ -27,6 +27,8 @@
     margin-right: 20px;
     font-size: $font-size--3;
     line-height: $line-height--3;
+    color: $color-typo-primary;
+    text-decoration: none;
     letter-spacing: $letter-spacing--2;
 
     &::after {
@@ -50,8 +52,13 @@
     }
 
     @media screen and (min-width: 1440px) {
+      max-width: 1120px;
       margin: 0 32px 32px 32px;
     }
+  }
+
+  &__iframe {
+    width: 99.7%;
   }
 
   &__text {

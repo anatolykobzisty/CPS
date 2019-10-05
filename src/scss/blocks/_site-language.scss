@@ -1,7 +1,5 @@
 .site-language {
-  position: absolute;
-  top: 620px;
-  left: 16px;
+  display: block;
 
   @media screen and (min-width: 360px) {
     left: 24px;
@@ -18,6 +16,8 @@
 
   &__link {
     margin-right: 7px;
+    color: $color-typo-primary;
+    text-decoration: none;
 
     &:hover {
       color: $color-typo-secondary;

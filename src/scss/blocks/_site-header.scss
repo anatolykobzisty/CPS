@@ -1,0 +1,110 @@
+@import "./blocks/_btn-circle.scss";
+
+.site-header {
+  grid-area: site-header;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    padding: 0 16px;
+    margin-bottom: 24px;
+    background: $color-bg-nav;
+    border-bottom: 1px solid $color-bg-border-header;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 24px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 28px;
+    left: 186px;
+    width: 2px;
+    height: 32px;
+    content: "";
+    background-color: $color-bg-border;
+    border-radius: 1px;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 84px;
+    }
+  }
+
+  &::after {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 28px;
+      right: 140px;
+      width: 2px;
+      height: 32px;
+      content: "";
+      background-color: $color-bg-border;
+      border-radius: 1px;
+    }
+  }
+
+  &__left-side {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 251px;
+    }
+  }
+
+  &__btn-menu {
+    margin-right: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 43px;
+    }
+  }
+
+  &__right-side {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-call {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-right: 16px;
+    }
+  }
+
+  &__btn-message {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-right: 16px;
+    }
+  }
+
+  &__btn-profile {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-right: 42px;
+    }
+  }
+
+  &__btn-repair {
+    margin-right: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 14px;
+    }
+  }
+}

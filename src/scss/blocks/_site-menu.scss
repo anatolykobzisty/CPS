@@ -2,6 +2,7 @@
 @import "./blocks/_site-email.scss";
 @import "./blocks/_site-phone.scss";
 @import "./blocks/_site-language.scss";
+@import "./blocks/_btn-circle.scss";
 
 .site-menu {
   @include font-lakes-medium;
@@ -9,53 +10,113 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 7;
   box-sizing: border-box;
+  grid-area: site-menu;
   min-width: 320px;
-  height: 676px;
+  height: 100%;
+  overflow-y: scroll;
   font-size: $font-size--3;
   line-height: $line-height--3;
   letter-spacing: $letter-spacing--2;
   background-color: $color-bg-nav;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 1.5s;
+  transition-property: transform;
+  transform: translateX(-360px);
 
   @media screen and (min-width: 360px) {
-    min-width: 360px;
+    width: 360px;
   }
 
   @media screen and (min-width: 768px) {
-    min-width: 320px;
-    height: 1024px;
+    width: 320px;
+    height: 100%;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02);
     box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
   }
 
   @media screen and (min-width: 1440px) {
-    left: 12px;
-    display: block;
-    min-width: 307px;
-    border-left: 1px solid $color-bg-border-header;
+    position: static;
+    z-index: 3;
+    width: 320px;
+    padding-left: 13px;
+    overflow: no-scroll;
+    border-right: 1px solid $color-bg-border-header;
     box-shadow: none;
+    transform: translateX(0);
   }
 
-  &--show {
-    display: none;
+  &__inner {
+    position: relative;
+    padding: 16px;
+
+    @media screen and (min-width: 360px) {
+      padding: 24px;
+    }
 
     @media screen and (min-width: 1440px) {
-      display: block;
+      padding: 24px 0;
+      padding-left: 16px;
+      border-left: 1px solid $color-bg-border-header;
+    }
+  }
+
+  &__btn-close {
+    margin-right: 10px;
+
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__site-logo {
+    margin-right: 92px;
+
+    @media screen and (min-width: 360px) {
+      margin-right: 116px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 79px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-right: 26px;
+    }
+  }
+
+  &__site-logo-img {
+    @media screen and (min-width: 1440px) {
+      width: 74px;
+      height: 36px;
+    }
+  }
+
+  &__btn-search {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    z-index: 2;
+
+    @media screen and (min-width: 360px) {
+      top: 32px;
+      right: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 20px;
+      right: 146px;
     }
   }
 
   &__list {
-    position: absolute;
-    top: 92px;
-    left: 16px;
-
-    @media screen and (min-width: 360px) {
-      left: 24px;
-    }
+    margin-top: 23px;
+    margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
-      top: 116px;
+      margin-top: 46px;
+      margin-bottom: 268px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -69,6 +130,8 @@
 
   &__item-link {
     position: relative;
+    color: $color-typo-primary;
+    text-decoration: none;
 
     &:hover {
       color: $color-typo-secondary;
@@ -85,6 +148,10 @@
 
         @media screen and (min-width: 360px) {
           left: -24px;
+        }
+
+        @media screen and (min-width: 1440px) {
+          left: -19px;
         }
       }
     }
@@ -105,7 +172,19 @@
         @media screen and (min-width: 360px) {
           left: -24px;
         }
+
+        @media screen and (min-width: 1440px) {
+          left: -19px;
+        }
       }
     }
+  }
+
+  &__btn-call {
+    margin-right: 16px;
+  }
+
+  &__btn-message {
+    margin-right: 16px;
   }
 }

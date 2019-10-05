@@ -2,7 +2,8 @@
 @import "./vendors/_swiper.css";
 @import "_mixins.scss";
 @import "_variables.scss";
-@import "./blocks/_site-nav.scss";
+@import "./blocks/_site-header.scss";
+@import "./blocks/_site-menu.scss";
 @import "./blocks/_site-content.scss";
 @import "./blocks/_site-footer.scss";
 @import "./blocks/_modal.scss";
@@ -19,12 +20,6 @@ body {
   color: $color-typo-primary;
   letter-spacing: $letter-spacing;
   background-color: $color-bg-main;
-}
-
-a {
-  color: $color-typo-primary;
-  text-decoration: none;
-  transition: all 0.5s ease;
 }
 
 img {
@@ -53,26 +48,27 @@ li {
 }
 
 .site-wrap {
-  position: relative;
   box-sizing: border-box;
   display: grid;
   grid-template-areas:
-    "site-nav site-nav"
+    "site-header site-header"
+    "site-menu site-menu"
     "site-content site-content"
     "site-footer site-footer";
-  grid-template-rows: 88px auto auto;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1440px;
-  margin: 0 auto;
+  grid-template-rows: 88px auto auto auto;
+  grid-template-columns: 50% 50%;
 
   @media screen and (min-width: 1440px) {
     display: grid;
     grid-template-areas:
-      "site-nav site-content"
-      "site-nav site-content"
-      "site-nav site-footer";
-    grid-template-rows: 1fr auto auto;
-    grid-template-columns: 320px 1fr;
+      "site-menu site-header"
+      "site-menu site-content"
+      "site-menu site-content"
+      "site-menu site-footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 320px 1120px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -93,7 +89,7 @@ li {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     display: none;
     width: 100%;
     height: 100%;
@@ -101,4 +97,10 @@ li {
     mix-blend-mode: normal;
     opacity: 0.96;
   }
+}
+
+.no-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }

@@ -6,13 +6,18 @@
 
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 10;
   box-sizing: border-box;
-  display: none;
+  display: block;
   min-width: 320px;
-  height: 676px;
+  height: 100%;
+  overflow-y: scroll;
   background-color: $color-bg-nav;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 1.5s;
+  transition-property: transform;
+  transform: translateX(600px);
 
   @media screen and (min-width: 768px) {
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02);
@@ -20,10 +25,9 @@
   }
 
   @media screen and (min-width: 1440px) {
-    right: 0;
-    left: auto;
     width: 440px;
-    height: 940px;
+    height: 100%;
+    overflow: visible;
     border-left: 1px solid $color-bg-border-header;
   }
 
@@ -141,5 +145,6 @@
 
   &__link {
     color: $color-bg-brand;
+    text-decoration: none;
   }
 }
