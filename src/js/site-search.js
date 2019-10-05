@@ -2,8 +2,6 @@ const btnOpenSearch = document.querySelector(".site-menu__btn-search");
 const btnCloseSearch = document.querySelector(".site-search__btn-close");
 const inputSearch = document.querySelector(".site-search__input-search");
 const imgSearch = document.querySelector(".site-search__img-search");
-const logo = document.querySelector(".site-logo");
-const btnCloseMenu = document.querySelector(".site-nav__btn-close");
 
 function showStringSearch() {
   if (window.innerWidth >= "1440") {
@@ -33,8 +31,6 @@ function showStringSearch() {
     inputSearch.style.paddingRight = "72px";
     btnCloseSearch.style.display = "block";
     imgSearch.style.display = "block";
-    logo.style.display = "none";
-    btnCloseMenu.style.display = "none";
   }
 }
 
@@ -60,7 +56,6 @@ function removeStringSearch() {
     inputSearch.style.paddingRight = "0";
     btnCloseSearch.style.display = "none";
     imgSearch.style.display = "none";
-    btnCloseMenu.style.display = "block";
   }
 }
 btnCloseSearch.addEventListener("click", removeStringSearch);
