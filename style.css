@@ -2513,7 +2513,7 @@ li {
       grid-template-areas: "site-menu site-header" "site-menu site-content" "site-menu site-content" "site-menu site-footer";
       grid-template-rows: auto auto auto auto;
       grid-template-columns: 320px 1120px;
-      width: 1440px;
+      max-width: 1440px;
       margin: 0 auto; } }
 
 .container {
