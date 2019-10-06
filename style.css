@@ -2359,7 +2359,7 @@ button.swiper-pagination-bullet {
   z-index: 10;
   box-sizing: border-box;
   min-width: 320px;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   overflow-y: scroll;
   background-color: #ffffff;
