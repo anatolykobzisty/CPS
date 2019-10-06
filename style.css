@@ -1708,10 +1708,10 @@ button.swiper-pagination-bullet {
     background: url(./static/arrows-down.svg) no-repeat 50% 50%; }
 
 .swiper-container {
-  width: 100%; }
+  width: 100%;
+  width: 304px; }
 
 .swiper-wrapper {
-  width: 304px;
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
@@ -1822,10 +1822,10 @@ button.swiper-pagination-bullet {
     background: url(./static/arrows-down.svg) no-repeat 50% 50%; }
 
 .swiper-container {
-  width: 100%; }
+  width: 100%;
+  width: 304px; }
 
 .swiper-wrapper {
-  width: 304px;
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
@@ -1949,10 +1949,10 @@ button.swiper-pagination-bullet {
       background: url(./static/dropdown.svg) no-repeat 50% 50%; }
 
 .swiper-container {
-  width: 100%; }
+  width: 100%;
+  width: 304px; }
 
 .swiper-wrapper {
-  width: 304px;
   padding-left: 16px; }
   @media screen and (min-width: 768px) {
     .swiper-wrapper {
