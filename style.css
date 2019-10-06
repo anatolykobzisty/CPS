@@ -2506,7 +2506,7 @@ li {
   display: grid;
   grid-template-areas: "site-menu site-header" "site-menu site-content" "site-menu site-footer";
   grid-template-rows: 88px auto auto;
-  grid-template-columns: auto auto; }
+  grid-template-columns: 100% 100%; }
   @media screen and (min-width: 1440px) {
     .site-wrap {
       display: grid;
