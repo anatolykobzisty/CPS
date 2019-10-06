@@ -2536,7 +2536,6 @@ li {
     opacity: 0.96; } }
 
 .no-scroll {
-  height: 100vh;
   overflow: hidden; }
 
 
