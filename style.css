@@ -2504,14 +2504,14 @@ li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: grid;
-  grid-template-areas: "site-menu site-header" "site-menu site-content" "site-menu site-footer";
-  grid-template-rows: 88px auto auto;
-  grid-template-columns: 100% 100%; }
+  grid-template-areas: "site-header site-header" "site-menu site-menu" "site-content site-content" "site-footer site-footer";
+  grid-template-rows: 88px auto auto auto;
+  grid-template-columns: 1fr 1fr; }
   @media screen and (min-width: 1440px) {
     .site-wrap {
       display: grid;
-      grid-template-areas: "site-menu site-header" "site-menu site-content" "site-menu site-footer";
-      grid-template-rows: auto auto auto;
+      grid-template-areas: "site-menu site-header" "site-menu site-content" "site-menu site-content" "site-menu site-footer";
+      grid-template-rows: auto auto auto auto;
       grid-template-columns: 320px 1120px;
       width: 1440px;
       margin: 0 auto; } }
