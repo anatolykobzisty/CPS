@@ -2538,8 +2538,7 @@ li {
     opacity: 0.96; } }
 
 .no-scroll {
-  height: 100vh;
-  overflow: hidden; }
+  position: fixed; }
 
 
 /*# sourceMappingURL=style.css.map*/
