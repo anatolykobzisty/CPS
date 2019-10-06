@@ -2467,9 +2467,10 @@ button.swiper-pagination-bullet {
 
 body {
   font-family: "TT Lakes-Regular", Arial, sans-serif;
+  max-width: 1440px;
   min-height: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   overflow-x: hidden;
   font-size: 14px;
   line-height: 18px;
@@ -2512,9 +2513,7 @@ li {
       display: grid;
       grid-template-areas: "site-menu site-header" "site-menu site-content" "site-menu site-content" "site-menu site-footer";
       grid-template-rows: auto auto auto auto;
-      grid-template-columns: 320px 1120px;
-      max-width: 1440px;
-      margin: 0 auto; } }
+      grid-template-columns: 320px 1120px; } }
 
 .container {
   padding: 0 16px; }
