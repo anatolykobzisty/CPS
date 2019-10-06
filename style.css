@@ -2353,7 +2353,7 @@ button.swiper-pagination-bullet {
 
 .modal {
   font-family: "TT Lakes-Medium", Arial, sans-serif;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 10;
