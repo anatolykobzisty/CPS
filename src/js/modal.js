@@ -10,6 +10,7 @@ const menu = document.querySelector(".site-menu");
 const overlay = document.querySelector(".overlay");
 
 function openModalCall() {
+  modalCall.classList.remove("visually-hidden");
   modalCall.style.transform = "translateX(0px)";
   if (window.innerWidth < "1440") {
     menu.style.transform = "translateX(-350px)";
@@ -22,6 +23,7 @@ function openModalCall() {
 }
 
 function openModalMessage() {
+  modalMessage.classList.remove("visually-hidden");
   modalMessage.style.transform = "translateX(0px)";
   if (window.innerWidth < "1440") {
     menu.style.transform = "translateX(-350px)";
@@ -48,6 +50,9 @@ function closeModalCall() {
   overlay.style.display = "none";
   overlay.style.zIndex = "1";
   document.body.classList.remove("no-scroll");
+  setTimeout(() => {
+    modalCall.classList.add("visually-hidden");
+  }, 1500);
 }
 
 function closeModalMessage() {
@@ -60,6 +65,9 @@ function closeModalMessage() {
   overlay.style.display = "none";
   overlay.style.zIndex = "1";
   document.body.classList.remove("no-scroll");
+  setTimeout(() => {
+    modalMessage.classList.add("visually-hidden");
+  }, 1500);
 }
 
 btnCloseCall.addEventListener("click", closeModalCall);
