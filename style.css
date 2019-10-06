@@ -2503,13 +2503,11 @@ li {
 
 .site-wrap {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-  @supports (grid-area: auto) {
-    .site-wrap {
-      display: grid;
-      grid-template-areas: "site-header site-header" "site-menu site-menu" "site-content site-content" "site-footer site-footer";
-      grid-template-rows: 88px auto auto auto;
-      grid-template-columns: 1fr 1fr; } }
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "site-header site-header" "site-menu site-menu" "site-content site-content" "site-footer site-footer";
+  grid-template-rows: 88px auto auto auto;
+  grid-template-columns: 1fr 1fr; }
   @media screen and (min-width: 1440px) {
     .site-wrap {
       display: grid;
