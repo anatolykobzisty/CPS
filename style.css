@@ -1282,89 +1282,48 @@ button.swiper-pagination-bullet {
       .site-header__btn-repair {
         margin-right: 14px; } }
 
-.btn-circle {
-  padding: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  background-color: #ff3e79;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-radius: 50%; }
-  .btn-circle--menu {
-    background-image: url(./static/menu.svg); }
-  .btn-circle--close {
-    background-image: url(./static/close.svg); }
-  .btn-circle--repair {
-    background-image: url(./static/repair.svg); }
-  .btn-circle--status {
-    background-image: url(./static/status.svg); }
-  .btn-circle--search {
-    background-image: url(./static/search.svg); }
-  .btn-circle--call {
-    background-image: url(./static/call.svg); }
-  .btn-circle--message {
-    background-image: url(./static/message.svg); }
-  .btn-circle--profile {
-    background-image: url(./static/profile.svg); }
-
-.site-search {
-  background-color: #000000; }
-  .site-search__form {
+.searchbox {
+  position: absolute;
+  top: 24px;
+  right: 16px; }
+  .searchbox__inner {
     position: relative;
-    background: #dd2222; }
-  .site-search__btn-close {
+    box-sizing: border-box;
+    display: inline-block; }
+  .searchbox__input {
     position: absolute;
-    top: -32px;
-    right: 48px;
-    z-index: 4;
-    display: none;
-    width: 10px;
-    height: 10px; }
-    @media screen and (min-width: 360px) {
-      .site-search__btn-close {
-        right: 50px; } }
-    @media screen and (min-width: 1440px) {
-      .site-search__btn-close {
-        right: 65px; } }
-  .site-search__img-search {
-    position: absolute;
-    top: -47px;
+    top: 0;
     right: 0;
     z-index: 3;
-    display: none;
-    width: 40px;
-    height: 40px; }
-    @media screen and (min-width: 1440px) {
-      .site-search__img-search {
-        right: 15px; } }
-  .site-search__input-search {
-    font-family: "TT Lakes-Medium", Arial, sans-serif;
-    position: absolute;
-    top: -47px;
-    right: 7px;
     box-sizing: border-box;
-    width: 11%;
+    display: inline-block;
+    width: 0;
     height: 40px;
-    padding: 8px 0 8px 16px;
+    padding-right: 40px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    border: 1px solid #eaeaea;
+    cursor: pointer;
+    background: transparent;
+    border: none;
     border-radius: 20px;
-    transition-duration: 2s, 2s;
-    transition-property: width, padding; }
-    @media screen and (min-width: 360px) {
-      .site-search__input-search {
-        right: 4px; } }
-    @media screen and (min-width: 1440px) {
-      .site-search__input-search {
-        right: 20px;
-        display: none; } }
+    outline: none;
+    transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .searchbox__input:focus {
+      z-index: 1;
+      width: 288px;
+      padding: 8px 72px 8px 16px;
+      cursor: text;
+      background: #ffffff;
+      background-image: url(./static/clear.svg);
+      background-repeat: no-repeat;
+      background-position: 216px center;
+      border: 1px solid #eaeaea; }
+  .searchbox__btn-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2; }
 
 .site-email {
   display: block;
@@ -1519,19 +1478,6 @@ button.swiper-pagination-bullet {
     .site-menu__site-logo-img {
       width: 74px;
       height: 36px; } }
-  .site-menu__btn-search {
-    position: absolute;
-    top: 24px;
-    right: 16px;
-    z-index: 2; }
-    @media screen and (min-width: 360px) {
-      .site-menu__btn-search {
-        top: 32px;
-        right: 24px; } }
-    @media screen and (min-width: 1440px) {
-      .site-menu__btn-search {
-        top: 20px;
-        right: 146px; } }
   .site-menu__list {
     margin-top: 23px;
     margin-bottom: 32px; }
