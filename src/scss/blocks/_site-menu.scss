@@ -63,7 +63,14 @@
   }
 
   &__btn-close {
-    margin-right: 10px;
+    position: absolute;
+    top: 24px;
+    left: 16px;
+
+    @media screen and (min-width: 360px) {
+      top: 32px;
+      left: 24px;
+    }
 
     @media screen and (min-width: 1440px) {
       display: none;
@@ -71,7 +78,9 @@
   }
 
   &__site-logo {
-    margin-right: 92px;
+    position: absolute;
+    top: 24px;
+    left: 73px;
 
     @media screen and (min-width: 360px) {
       margin-right: 116px;
@@ -94,16 +103,16 @@
   }
 
   &__list {
-    margin-top: 23px;
+    margin-top: 76px;
     margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
-      margin-top: 46px;
+      margin-top: 92px;
       margin-bottom: 268px;
     }
 
     @media screen and (min-width: 1440px) {
-      top: 120px;
+      margin-top: 96px;
     }
   }
 

@@ -3,6 +3,16 @@
   top: 24px;
   right: 16px;
 
+  @media screen and (min-width: 360px) {
+    top: 32px;
+    right: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 24px;
+    right: 24px;
+  }
+
   &__inner {
     position: relative;
     box-sizing: border-box;
