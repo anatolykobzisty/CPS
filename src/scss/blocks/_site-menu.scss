@@ -1,4 +1,4 @@
-@import "./blocks/_site-search.scss";
+@import "./blocks/_searchbox.scss";
 @import "./blocks/_site-email.scss";
 @import "./blocks/_site-phone.scss";
 @import "./blocks/_site-language.scss";
@@ -90,23 +90,6 @@
     @media screen and (min-width: 1440px) {
       width: 74px;
       height: 36px;
-    }
-  }
-
-  &__btn-search {
-    position: absolute;
-    top: 24px;
-    right: 16px;
-    z-index: 2;
-
-    @media screen and (min-width: 360px) {
-      top: 32px;
-      right: 24px;
-    }
-
-    @media screen and (min-width: 1440px) {
-      top: 20px;
-      right: 146px;
     }
   }
 

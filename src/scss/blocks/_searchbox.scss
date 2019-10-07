@@ -1,0 +1,51 @@
+.searchbox {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+
+  &__inner {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 0;
+    height: 40px;
+    padding-right: 40px;
+    font-size: $font-size--3;
+    line-height: $line-height--3;
+    letter-spacing: $letter-spacing--2;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:focus {
+      z-index: 1;
+      width: 288px;
+      padding: 8px 72px 8px 16px;
+      cursor: text;
+      background: #ffffff;
+      background-image: url("../img/clear.svg");
+      background-repeat: no-repeat;
+      background-position: 216px center;
+      border: 1px solid #eaeaea;
+    }
+  }
+
+  &__btn-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
