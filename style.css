@@ -1468,7 +1468,7 @@ button.swiper-pagination-bullet {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 1.5s;
   transition-property: transform;
-  transform: translateX(-360px); }
+  transform: translateX(-100%); }
   @media screen and (min-width: 360px) {
     .site-menu {
       width: 360px; } }
@@ -1484,7 +1484,7 @@ button.swiper-pagination-bullet {
       z-index: 3;
       width: 320px;
       padding-left: 13px;
-      overflow: no-scroll;
+      overflow: auto;
       border-right: 1px solid #d9fff5;
       box-shadow: none;
       transform: translateX(0); } }
@@ -1726,7 +1726,13 @@ button.swiper-pagination-bullet {
     margin-right: 16px !important; }
 
 .swiper-pagination {
-  height: 12px; }
+  position: relative;
+  height: 12px;
+  margin-top: 16px;
+  margin-bottom: 2px; }
+  @media screen and (min-width: 768px) {
+    .swiper-pagination {
+      display: none; } }
 
 .swiper-pagination-bullets {
   bottom: 1px !important; }
@@ -1752,10 +1758,7 @@ button.swiper-pagination-bullet {
     margin: 0;
     font-size: 16px; }
   .brands__container {
-    height: 100px; }
-    @media screen and (min-width: 768px) {
-      .brands__container {
-        height: 176px; } }
+    height: 100%; }
   .brands__list {
     display: flex; }
     @media screen and (min-width: 768px) {
@@ -1780,6 +1783,14 @@ button.swiper-pagination-bullet {
       .brands__item {
         width: 240px;
         margin-right: 32px; } }
+  @media screen and (min-width: 768px) {
+    .brands__item:nth-child(6) ~ .brands__item {
+      display: none; } }
+  @media screen and (min-width: 960px) {
+    .brands__item:nth-child(6) ~ .brands__item {
+      display: flex; }
+    .brands__item:nth-child(8) ~ .brands__item {
+      display: none; } }
   .brands__item-link {
     position: absolute;
     right: 16px;
@@ -1839,7 +1850,13 @@ button.swiper-pagination-bullet {
     margin-right: 16px !important; }
 
 .swiper-pagination {
-  height: 12px; }
+  position: relative;
+  height: 12px;
+  margin-top: 16px;
+  margin-bottom: 2px; }
+  @media screen and (min-width: 768px) {
+    .swiper-pagination {
+      display: none; } }
 
 .swiper-pagination-bullets {
   bottom: 1px !important; }
@@ -1865,10 +1882,7 @@ button.swiper-pagination-bullet {
     margin: 0;
     font-size: 16px; }
   .devices__container {
-    height: 188px; }
-    @media screen and (min-width: 768px) {
-      .devices__container {
-        height: 176px; } }
+    height: 100%; }
   .devices__list {
     display: flex; }
     @media screen and (min-width: 768px) {
@@ -1891,6 +1905,17 @@ button.swiper-pagination-bullet {
       .devices__item {
         width: 240px;
         margin-right: 32px; } }
+  @media screen and (min-width: 768px) {
+    .devices__item:nth-child(3) ~ .devices__item {
+      display: none; } }
+  @media screen and (min-width: 960px) {
+    .devices__item:nth-child(3) ~ .devices__item {
+      display: flex; }
+    .devices__item:nth-child(4) ~ .devices__item {
+      display: none; } }
+  @media screen and (min-width: 1440px) {
+    .devices__item:nth-child(4) ~ .devices__item {
+      display: none; } }
   .devices__item-title {
     font-family: "TT Lakes-Medium", Arial, sans-serif;
     position: absolute;
@@ -1965,7 +1990,13 @@ button.swiper-pagination-bullet {
     margin-right: 16px !important; }
 
 .swiper-pagination {
-  height: 12px; }
+  position: relative;
+  height: 12px;
+  margin-top: 16px;
+  margin-bottom: 2px; }
+  @media screen and (min-width: 768px) {
+    .swiper-pagination {
+      display: none; } }
 
 .swiper-pagination-bullets {
   bottom: 1px !important; }
@@ -1991,7 +2022,7 @@ button.swiper-pagination-bullet {
     margin: 0;
     font-size: 16px; }
   .price__container {
-    height: 228px;
+    height: 100%;
     margin-bottom: 16px; }
     @media screen and (min-width: 768px) {
       .price__container {
@@ -2365,7 +2396,7 @@ button.swiper-pagination-bullet {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 1.5s;
   transition-property: transform;
-  transform: translateX(600px); }
+  transform: translateX(100%); }
   @media screen and (min-width: 768px) {
     .modal {
       box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02);
