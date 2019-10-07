@@ -4,7 +4,7 @@ const menu = document.querySelector(".site-menu");
 const overlay = document.querySelector(".overlay");
 
 function openMenu() {
-  menu.style.transform = "translateX(0px)";
+  menu.style.transform = "translateX(0%)";
   overlay.style.display = "block";
   document.body.classList.add("no-scroll");
 }
@@ -12,7 +12,7 @@ function openMenu() {
 btnMenu.addEventListener("click", openMenu);
 
 function closeMenu() {
-  menu.style.transform = "translateX(-350px)";
+  menu.style.transform = "translateX(-100%)";
   overlay.style.display = "none";
   document.body.classList.remove("no-scroll");
 }

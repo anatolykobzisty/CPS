@@ -1,14 +1,17 @@
 const btn = document.querySelector(".brands__btn");
-const brands = document.querySelector(".brands__container");
-
-btn.addEventListener("click", showMore);
+const brandItems = document.querySelectorAll(".brands__item");
 
 function showMore() {
-  if (brands.style.height === "100%") {
-    brands.style.height = "176px";
-    btn.innerHTML = `<span class="btn-more__text">Показать все (9)</span>`;
-  } else {
-    brands.style.height = "100%";
-    btn.innerHTML = `<span class="btn-more__text">Свернуть</span>`;
+  window.innerWidth > "960" ? (j = 8) : (j = 6);
+  for (let i = j; i < brandItems.length; i++) {
+    if (brandItems[i].style.display === "flex") {
+      brandItems[i].style.display = "none";
+      btn.innerHTML = `<span class="btn-more__text">Показать все (9)</span>`;
+    } else {
+      brandItems[i].style.display = "flex";
+      btn.innerHTML = `<span class="btn-more__text">Свернуть</span>`;
+    }
   }
 }
+
+btn.addEventListener("click", showMore);

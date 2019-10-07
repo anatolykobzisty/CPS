@@ -18,11 +18,7 @@
   }
 
   &__container {
-    height: 100px;
-
-    @media screen and (min-width: 768px) {
-      height: 176px;
-    }
+    height: 100%;
   }
 
   &__list {
@@ -53,6 +49,22 @@
     @media screen and (min-width: 1440px) {
       width: 240px;
       margin-right: 32px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__item:nth-child(6) ~ .brands__item {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    &__item:nth-child(6) ~ .brands__item {
+      display: flex;
+    }
+
+    &__item:nth-child(8) ~ .brands__item {
+      display: none;
     }
   }
 

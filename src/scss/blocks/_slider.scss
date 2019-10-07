@@ -24,7 +24,14 @@
 }
 
 .swiper-pagination {
+  position: relative;
   height: 12px;
+  margin-top: 16px;
+  margin-bottom: 2px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullets {

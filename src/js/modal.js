@@ -11,11 +11,11 @@ const overlay = document.querySelector(".overlay");
 
 function openModalCall() {
   modalCall.classList.remove("visually-hidden");
-  modalCall.style.transform = "translateX(0px)";
+  modalCall.style.transform = "translateX(0%)";
   if (window.innerWidth < "1440") {
-    menu.style.transform = "translateX(-350px)";
+    menu.style.transform = "translateX(-100%)";
   } else {
-    menu.style.transform = "translateX(0px)";
+    menu.style.transform = "translateX(0%)";
   }
   overlay.style.display = "block";
   overlay.style.zIndex = "3";
@@ -24,11 +24,11 @@ function openModalCall() {
 
 function openModalMessage() {
   modalMessage.classList.remove("visually-hidden");
-  modalMessage.style.transform = "translateX(0px)";
+  modalMessage.style.transform = "translateX(0%)";
   if (window.innerWidth < "1440") {
-    menu.style.transform = "translateX(-350px)";
+    menu.style.transform = "translateX(-100%)";
   } else {
-    menu.style.transform = "translateX(0px)";
+    menu.style.transform = "translateX(0%)";
   }
   overlay.style.display = "block";
   overlay.style.zIndex = "3";
@@ -41,11 +41,11 @@ menuBtnCall.addEventListener("click", openModalCall);
 menuBtnMessage.addEventListener("click", openModalMessage);
 
 function closeModalCall() {
-  modalCall.style.transform = "translateX(600px)";
+  modalCall.style.transform = "translateX(100%)";
   if (window.innerWidth < "1440") {
-    menu.style.transform = "translateX(-350px)";
+    menu.style.transform = "translateX(-100%)";
   } else {
-    menu.style.transform = "translateX(0px)";
+    menu.style.transform = "translateX(0%)";
   }
   overlay.style.display = "none";
   overlay.style.zIndex = "1";
@@ -56,11 +56,11 @@ function closeModalCall() {
 }
 
 function closeModalMessage() {
-  modalMessage.style.transform = "translateX(600px)";
+  modalMessage.style.transform = "translateX(100%)";
   if (window.innerWidth < "1440") {
-    menu.style.transform = "translateX(-350px)";
+    menu.style.transform = "translateX(-100%)";
   } else {
-    menu.style.transform = "translateX(0px)";
+    menu.style.transform = "translateX(0%)";
   }
   overlay.style.display = "none";
   overlay.style.zIndex = "1";
@@ -74,7 +74,7 @@ btnCloseCall.addEventListener("click", closeModalCall);
 btnCloseMessage.addEventListener("click", closeModalMessage);
 
 function closeModal() {
-  if (modalCall.style.transform === "translateX(0px)") {
+  if (modalCall.style.transform === "translateX(0%)") {
     closeModalCall();
   }
   closeModalMessage();
