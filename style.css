@@ -1466,6 +1466,9 @@ button.swiper-pagination-bullet {
         padding: 24px 0;
         padding-left: 16px;
         border-left: 1px solid #d9fff5; } }
+  .site-menu__inner-top {
+    display: flex;
+    align-items: center; }
   .site-menu__btn-close {
     margin-right: 10px; }
     @media screen and (min-width: 1440px) {
