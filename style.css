@@ -1466,16 +1466,21 @@ button.swiper-pagination-bullet {
         padding: 24px 0;
         padding-left: 16px;
         border-left: 1px solid #d9fff5; } }
-  .site-menu__inner-top {
-    display: flex;
-    align-items: center; }
   .site-menu__btn-close {
-    margin-right: 10px; }
+    position: absolute;
+    top: 24px;
+    left: 16px; }
+    @media screen and (min-width: 360px) {
+      .site-menu__btn-close {
+        top: 32px;
+        left: 24px; } }
     @media screen and (min-width: 1440px) {
       .site-menu__btn-close {
         display: none; } }
   .site-menu__site-logo {
-    margin-right: 92px; }
+    position: absolute;
+    top: 24px;
+    left: 73px; }
     @media screen and (min-width: 360px) {
       .site-menu__site-logo {
         margin-right: 116px; } }
@@ -1490,15 +1495,15 @@ button.swiper-pagination-bullet {
       width: 74px;
       height: 36px; } }
   .site-menu__list {
-    margin-top: 23px;
+    margin-top: 76px;
     margin-bottom: 32px; }
     @media screen and (min-width: 768px) {
       .site-menu__list {
-        margin-top: 46px;
+        margin-top: 92px;
         margin-bottom: 268px; } }
     @media screen and (min-width: 1440px) {
       .site-menu__list {
-        top: 120px; } }
+        margin-top: 96px; } }
   .site-menu__item {
     margin-bottom: 24px; }
   .site-menu__item-link {
