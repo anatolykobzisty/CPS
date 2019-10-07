@@ -1286,6 +1286,14 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 24px;
   right: 16px; }
+  @media screen and (min-width: 360px) {
+    .searchbox {
+      top: 32px;
+      right: 24px; } }
+  @media screen and (min-width: 1440px) {
+    .searchbox {
+      top: 24px;
+      right: 24px; } }
   .searchbox__inner {
     position: relative;
     box-sizing: border-box;
